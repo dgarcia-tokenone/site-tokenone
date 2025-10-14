@@ -7,9 +7,10 @@ const nextConfig = {
   async headers() {
     const cspParts = [
       "default-src 'self'",
-      // Em dev, Next/Turbopack usa eval e websockets
+      // Next.js precisa de 'unsafe-inline' para scripts inline de hidratação
+      // e 'unsafe-eval' para chunks dinâmicos em produção
       isProd
-        ? "script-src 'self'"
+        ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'"
         : "script-src 'self' 'unsafe-eval' 'unsafe-inline'",
       "style-src 'self' 'unsafe-inline'",
       "img-src 'self' data: blob:",
