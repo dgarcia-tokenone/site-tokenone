@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { useSearchParams, useRouter } from 'next/navigation'
+import { useState, useEffect, Suspense } from 'react'
+import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
 const CANAIS = [
@@ -11,9 +11,8 @@ const CANAIS = [
   'Canal LGPD',
 ] as const
 
-export default function ContatoPage() {
+function ContatoForm() {
   const searchParams = useSearchParams()
-  const router = useRouter()
   const canalParam = searchParams.get('canal')
 
   const [formData, setFormData] = useState({
@@ -241,5 +240,29 @@ export default function ContatoPage() {
         </div>
       </div>
     </div>
+  )
+}
+
+export default function ContatoPage() {
+  return (
+    <Suspense fallback={
+      <div className="py-5 bg-light min-vh-100">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-12 col-lg-8">
+              <div className="card shadow-sm border-0">
+                <div className="card-body p-4 p-md-5 text-center">
+                  <div className="spinner-border text-primary" role="status">
+                    <span className="visually-hidden">Carregando...</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    }>
+      <ContatoForm />
+    </Suspense>
   )
 }
