@@ -9,22 +9,23 @@ const partnerLogos = [
     alt: "Logo ISI Bank",
     width: 160,
     height: 90,
-    style: { filter: "grayscale(15%)" },
+    style: { filter: "grayscale(15%)" } as React.CSSProperties,
   },
   {
     src: "/images/Logo-TS-Securitizadora.webp",
     alt: "Logo TS Securitizadora",
     width: 200,
     height: 90,
+    style: undefined as React.CSSProperties | undefined,
   },
   {
     src: "/images/logo-claro.webp",
     alt: "Logo Securitizar",
     width: 200,
     height: 90,
-    style: { filter: "grayscale(5%)" },
+    style: { filter: "grayscale(5%)" } as React.CSSProperties,
   },
-] as const;
+];
 
 export default function HomePage() {
   return (
