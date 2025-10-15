@@ -58,7 +58,7 @@ const sections: FooterSection[] = [
       </svg>
     ),
     links: [
-      { label: "Emita tokens", href: "/solucoes#emissao" },
+      { label: "Emita tokens", href: "https://app.tokenone.com.br/authentication?organizationId=5rSaRhby9TbL7nmJa6rp" },
       { label: "Área do emissor", href: APP_URL },
     ],
   },

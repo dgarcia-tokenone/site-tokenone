@@ -7,7 +7,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Páginas estáticas principais
   const routes = [
     '',
-    '/solucoes',
     '/quem-somos',
     '/sobre',
     '/contato',

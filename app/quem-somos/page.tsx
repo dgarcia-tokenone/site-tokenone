@@ -42,19 +42,19 @@ export const metadata: Metadata = {
 
 const pillars = [
   {
-    badge: "Tokenização regulatória",
+    badge: "Crypto as a Service)",
+    description:
+      "Entregamos carteiras MPC, emissões de stablecoins e integrações fiat-crypto sob demanda, com SLAs corporativos.",
+  },
+  {
+    badge: "Tokenização",
     description:
       "Estruturamos ofertas dentro da CVM 88 com governança digital, trilhas de auditoria e cap table automatizado.",
   },
   {
-    badge: "Distribuição white label",
+    badge: "Distribuição whitelabel",
     description:
       "Criamos marketplaces customizados com onboarding, suitability e experiências omnichannel para investidores.",
-  },
-  {
-    badge: "Crypto as a Service",
-    description:
-      "Entregamos carteiras MPC, emissões de stablecoins e integrações fiat-crypto sob demanda, com SLAs corporativos.",
   },
 ] as const;
 
@@ -122,16 +122,16 @@ export default function AboutPage() {
         <div className="container">
           <div className="row align-items-center g-5">
             <div className="col-12 col-lg-6 text-white">
-              <p className="text-uppercase medium mb-3" style={{ letterSpacing: "0.2em", color: "#60a5fa" }}>
+              <p className="text-uppercase fw-bold large mb-3" style={{ letterSpacing: "0.2em", color: "#60a5fa" }}>
                 Sobre a Token One
               </p>
-              <h1 className="display-6 fw-bold mb-4" id="quem-somos-hero-title" style={{ lineHeight: 1.2 }}>
+              <h1 className="display-6 mb-4" id="quem-somos-hero-title" style={{ lineHeight: 1.2 }}>
                 A Token One é uma empresa de tecnologia que oferece uma plataforma whitelabel de Crypto as a Service (CaaS) para transformar qualquer ativo em um token digital utilizando a Blockchain.
               </h1>
 
               <div className="d-flex flex-wrap gap-3">
-                <Link className="btn btn-outline-light px-4" href="https://app.tokenone.com.br/authentication?organizationId=5rSaRhby9TbL7nmJa6rp">
-                  Conheça a plataforma
+                <Link className="btn fw-bold btn-outline-light px-4" href="https://app.tokenone.com.br/authentication?organizationId=5rSaRhby9TbL7nmJa6rp">
+                  Conheça a Plataforma
                 </Link>
               </div>
             </div>
@@ -147,12 +147,6 @@ export default function AboutPage() {
                   className="img-fluid"
                   style={{ display: "block" }}
                 />
-                <span
-                  className="position-absolute top-0 end-0 translate-middle-y rounded-pill px-3 py-2 text-white fw-semibold small"
-                  style={{ background: "rgba(37, 99, 235, 0.7)", letterSpacing: "0.08em", transform: "translateY(-50%) translateX(0)" }}
-                >
-                  Tokenização, Distribuição, Governança
-                </span>
               </div>
             </div>
           </div>

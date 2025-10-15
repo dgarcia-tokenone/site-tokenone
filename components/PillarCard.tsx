@@ -31,11 +31,11 @@ export default function PillarCard({ badge, description, index }: PillarCardProp
             width: "48px",
             height: "48px",
             background: index === 0 ? "rgba(59, 130, 246, 0.1)" :
-                       index === 1 ? "rgba(96, 165, 250, 0.1)" :
-                       "rgba(71, 85, 105, 0.1)",
+                       index === 1 ? "rgba(71, 85, 105, 0.1)" :
+                       "rgba(59, 130, 246, 0.1)",
             color: index === 0 ? "#3b82f6" :
-                   index === 1 ? "#2563eb" :
-                   "#475569",
+                   index === 1 ? "#475569" :
+                   "#3b82f6",
           }}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -52,11 +52,11 @@ export default function PillarCard({ badge, description, index }: PillarCardProp
           className="badge text-uppercase fw-semibold px-3 py-2"
           style={{
             background: index === 0 ? "rgba(59, 130, 246, 0.1)" :
-                       index === 1 ? "rgba(96, 165, 250, 0.1)" :
-                       "rgba(71, 85, 105, 0.1)",
+                       index === 1 ? "rgba(71, 85, 105, 0.1)" :
+                       "rgba(59, 130, 246, 0.1)",
             color: index === 0 ? "#1e40af" :
-                   index === 1 ? "#1e40af" :
-                   "#334155",
+                   index === 1 ? "#334155" :
+                   "#1e40af",
             fontSize: "0.7rem",
             letterSpacing: "0.05em"
           }}
