@@ -107,7 +107,7 @@ const sections: FooterSection[] = [
     links: [
       { label: "Canal de denúncias", href: "/contato?canal=Canal de denúncias" },
       { label: "Canal LGPD", href: "/contato?canal=Canal LGPD" },
-      { label: "Código de Ética e Conduta", href: "#etica" },
+      { label: "Código de Ética e Conduta", href: "/codigo-etica-conduta" },
       { label: "Política de PLD/CFT", href: "#pld" },
       { label: "Processo de KYC/PLD", href: "#kyc" },
     ],
