@@ -99,7 +99,7 @@ export default function DevelopersSection() {
                 Sandbox gratuita, sem cartão e com suporte técnico dedicado desde o primeiro deploy.
               </p>
 
-              <Link className="btn btn-dark btn-lg developers-docs-btn" href="/docs">
+              <Link className="btn btn-dark btn-lg developers-docs-btn" href="/">
                 Ver documentação
               </Link>
             </div>

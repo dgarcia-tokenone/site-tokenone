@@ -137,18 +137,16 @@ export default function AboutPage() {
             </div>
             <div className="col-12 col-lg-6">
               <div className="position-relative">
-                <div className="rounded-4 shadow-lg overflow-hidden">
-                  <Image
-                    src="/images/estrutura.png"
-                    alt="Estrutura tecnológica Token One"
-                    width={960}
-                    height={720}
-                    sizes="(max-width: 991px) 100vw, 540px"
-                    priority
-                    className="img-fluid"
-                    style={{ display: "block" }}
-                  />
-                </div>
+                <Image
+                  src="/images/estrutura.png"
+                  alt="Estrutura tecnológica Token One"
+                  width={960}
+                  height={720}
+                  sizes="(max-width: 991px) 100vw, 540px"
+                  priority
+                  className="img-fluid"
+                  style={{ display: "block" }}
+                />
                 <span
                   className="position-absolute top-0 end-0 translate-middle-y rounded-pill px-3 py-2 text-white fw-semibold small"
                   style={{ background: "rgba(37, 99, 235, 0.7)", letterSpacing: "0.08em", transform: "translateY(-50%) translateX(0)" }}
