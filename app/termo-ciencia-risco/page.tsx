@@ -1,420 +1,328 @@
-import type { Metadata } from "next";
-import { siteConfig } from "@/config/site";
-
-const pageTitle = "Termo de Ciência de Risco";
-const pageDescription = "Termo de ciência de risco para investimentos em valores mobiliários através da plataforma Token One, conforme Resolução CVM 88/2022.";
-
-const canonicalUrl = new URL("/termo-ciencia-risco", siteConfig.url).toString();
-
-export const metadata: Metadata = {
-  title: pageTitle,
-  description: pageDescription,
-  alternates: {
-    canonical: canonicalUrl,
-  },
-  openGraph: {
-    title: `${siteConfig.name} — ${pageTitle}`,
-    description: pageDescription,
-    url: canonicalUrl,
-    siteName: siteConfig.name,
-    locale: siteConfig.locale,
-    type: "website",
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `${siteConfig.name} — ${pageTitle}`,
-    description: pageDescription,
-    images: [siteConfig.ogImage],
-  },
+export const metadata = {
+  title: "Termo de Ciência e Risco | TokenOne",
+  description:
+    "Entenda os riscos envolvidos no investimento em valores mobiliários através de crowdfunding. Documento essencial para investidores da TokenOne.",
 };
 
 export default function TermoCienciaRiscoPage() {
   return (
-    <>
-      {/* Hero Section */}
-      <section
-        className="py-5"
-        style={{
-          background: "linear-gradient(180deg, #f8fafc 0%, #ffffff 100%)",
-          borderBottom: "1px solid #e2e8f0",
-        }}
-      >
-        <div className="container">
-          <div className="row justify-content-center text-center">
-            <div className="col-lg-10">
-              <h1 className="display-5 fw-bold mb-3" style={{ color: "#0f172a" }}>
-                Termo de Ciência de Risco
-              </h1>
-              <p className="lead text-muted">
-                Declaração obrigatória de ciência dos riscos inerentes aos investimentos realizados através da plataforma Token One.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main className="py-5 py-lg-6">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-12 col-lg-10 col-xl-9">
+            <article className="legal-document">
+              <header className="mb-5">
+                <h1 className="display-5 fw-bold mb-4">TERMO DE CIÊNCIA E RISCO DO INVESTIDOR</h1>
+                <p className="lead text-secondary">
+                  Documento obrigatório para todos os investidores que desejam investir através da plataforma TokenOne
+                </p>
+              </header>
 
-      {/* Content Section */}
-      <section className="py-5 py-lg-6">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10">
-              {/* Alert Box */}
-              <div className="alert alert-warning mb-5" role="alert" style={{ borderLeft: "4px solid #f59e0b", borderRadius: "0.5rem" }}>
-                <h5 className="alert-heading fw-bold">
-                  <i className="bi bi-exclamation-triangle-fill me-2"></i>
-                  Atenção: Leitura Obrigatória
-                </h5>
-                <p className="mb-0">
-                  Este documento é de leitura obrigatória para todos os investidores que desejam realizar investimentos através da plataforma Token One.
-                  A aceitação deste termo é requisito essencial para participação em ofertas de valores mobiliários, conforme determinado pela Resolução CVM 88/2022.
+              <section className="mb-5">
+                <h2 className="h3 fw-semibold mb-3">O que é o Termo de Ciência e Risco?</h2>
+                <p className="mb-4">
+                  O Termo de Ciência e Risco do Investidor é um documento obrigatório, estabelecido pela Resolução CVM 88/2022,
+                  que deve ser assinado por todos os investidores antes de realizar qualquer investimento em ofertas públicas
+                  de valores mobiliários dispensadas de registro através de plataformas de crowdfunding.
                 </p>
-              </div>
+                <p className="mb-4">
+                  Este documento tem como objetivo assegurar que o investidor está ciente de todos os riscos envolvidos neste
+                  tipo de investimento, incluindo a possibilidade de perda total do capital investido, a falta de liquidez
+                  dos ativos e as características específicas das sociedades empresárias de pequeno porte.
+                </p>
+              </section>
 
-              {/* Introduction */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  Introdução
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  A <strong>Token One LTDA</strong>, inscrita no CNPJ 37.728.588/0001-04, doravante denominada <strong>PLATAFORMA</strong>, atua como Plataforma Eletrônica de Investimento Participativo,
-                  em conformidade com a Resolução CVM nº 88/2022, facilitando a captação de recursos por empresas de pequeno porte através da oferta pública de valores mobiliários.
+              <section className="mb-5">
+                <h2 className="h3 fw-semibold mb-3">Por que este documento é importante?</h2>
+                <p className="mb-3">
+                  Investir em sociedades empresárias de pequeno porte através de crowdfunding apresenta riscos significativos
+                  que diferem de investimentos tradicionais. O Termo de Ciência e Risco garante que você, investidor:
                 </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Este Termo de Ciência de Risco tem como objetivo informar os investidores sobre os riscos inerentes aos investimentos em valores mobiliários ofertados através desta plataforma,
-                  permitindo que tomem decisões conscientes e fundamentadas sobre suas aplicações financeiras.
-                </p>
-              </div>
-
-              {/* Risco 1 */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  1. Risco de Perda do Capital Investido
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <strong>O INVESTIDOR PODE PERDER A TOTALIDADE DO CAPITAL INVESTIDO.</strong>
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Os investimentos em valores mobiliários de empresas de pequeno porte envolvem alto grau de risco. Não há garantia de retorno do capital investido nem de rentabilidade mínima.
-                  Em caso de insolvência, recuperação judicial ou falência da empresa emissora, o investidor pode não recuperar qualquer valor investido.
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Empresas em estágio inicial ou de pequeno porte apresentam maior volatilidade e incerteza quanto aos seus resultados operacionais e financeiros.
-                  Históricos financeiros passados não garantem resultados futuros.
-                </p>
-              </div>
-
-              {/* Risco 2 */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  2. Ausência de Garantia do Fundo Garantidor de Créditos (FGC)
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <strong>OS INVESTIMENTOS REALIZADOS ATRAVÉS DA PLATAFORMA NÃO SÃO GARANTIDOS PELO FGC.</strong>
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  O Fundo Garantidor de Créditos (FGC) protege exclusivamente determinados depósitos e investimentos bancários, como poupança, CDB, LCI e LCA, até o limite de R$ 250.000,00 por CPF/CNPJ e por instituição financeira.
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Os valores mobiliários ofertados através desta plataforma (tokens representativos de dívida, participação societária ou outros ativos) <strong>NÃO contam com cobertura do FGC</strong> nem de qualquer outro mecanismo de garantia governamental.
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Em caso de inadimplência ou insolvência do emissor, a recuperação do capital dependerá exclusivamente das garantias específicas previstas nos termos da oferta e da capacidade de pagamento do emissor.
-                </p>
-              </div>
-
-              {/* Risco 3 */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  3. Risco de Liquidez
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <strong>OS INVESTIMENTOS PODEM APRESENTAR BAIXA OU NENHUMA LIQUIDEZ.</strong>
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Liquidez refere-se à facilidade de conversão do investimento em dinheiro sem perda significativa de valor.
-                  Os valores mobiliários ofertados através da plataforma podem não possuir mercado secundário ativo ou qualquer mercado secundário.
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Mesmo quando existe mercado secundário, não há garantia de que haverá compradores interessados em adquirir seus tokens pelo preço desejado ou em qualquer preço.
-                  O investidor pode precisar manter o investimento até o vencimento ou data de resgate prevista nos termos da oferta.
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Tentativas de venda antecipada podem resultar em deságios significativos (venda por valor inferior ao investido).
-                  Em situações de necessidade urgente de recursos, o investidor pode não conseguir resgatar seu investimento.
-                </p>
-              </div>
-
-              {/* Risco 4 */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  4. Risco de Crédito e Inadimplência
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <strong>O EMISSOR PODE NÃO HONRAR SEUS COMPROMISSOS FINANCEIROS.</strong>
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Risco de crédito é a possibilidade de o emissor não cumprir suas obrigações de pagamento de juros, principal ou outras remunerações previstas nos termos da oferta.
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Empresas de pequeno porte apresentam maior risco de inadimplência devido a: menor diversificação de receitas, maior dependência de poucos clientes ou fornecedores,
-                  menor capacidade de acesso a crédito, maior vulnerabilidade a crises econômicas e setoriais.
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Em caso de inadimplência, o investidor poderá: ter atraso nos pagamentos de juros ou principal, receber valores inferiores ao contratado,
-                  precisar acionar garantias (quando existirem), ingressar com medidas judiciais de cobrança (com custos e prazos incertos).
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  A PLATAFORMA <strong>NÃO se responsabiliza</strong> por inadimplência, atrasos ou descumprimento de obrigações por parte dos emissores.
-                  A PLATAFORMA não atua como garantidora, avalista ou fiadora das obrigações dos emissores.
-                </p>
-              </div>
-
-              {/* Risco 5 */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  5. Risco de Mercado e Volatilidade
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <strong>O VALOR DOS INVESTIMENTOS PODE VARIAR SIGNIFICATIVAMENTE.</strong>
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Os valores mobiliários estão sujeitos a flutuações de valor decorrentes de diversos fatores, incluindo:
-                </p>
-                <ul className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <li>Condições econômicas gerais (inflação, taxa de juros, PIB, câmbio)</li>
-                  <li>Condições específicas do setor de atuação do emissor</li>
-                  <li>Desempenho operacional e financeiro da empresa</li>
-                  <li>Mudanças regulatórias e legislativas</li>
-                  <li>Sentimento geral do mercado e dos investidores</li>
-                  <li>Eventos geopolíticos e macroeconômicos</li>
+                <ul className="mb-4">
+                  <li className="mb-2">
+                    <strong>Compreenda os riscos:</strong> Está ciente de que pode perder todo o capital investido caso a
+                    empresa não tenha sucesso ou enfrente dificuldades financeiras.
+                  </li>
+                  <li className="mb-2">
+                    <strong>Reconheça a baixa liquidez:</strong> Entende que os valores mobiliários adquiridos podem ter
+                    dificuldade de venda no mercado secundário, tornando difícil resgatar seu investimento rapidamente.
+                  </li>
+                  <li className="mb-2">
+                    <strong>Aceite a ausência de garantias:</strong> Está ciente de que a CVM não analisa previamente as
+                    ofertas e não garante a veracidade das informações prestadas pelas empresas.
+                  </li>
+                  <li className="mb-2">
+                    <strong>Tome decisões conscientes:</strong> Tem acesso a todas as informações necessárias para avaliar
+                    se o investimento é adequado ao seu perfil de risco e objetivos financeiros.
+                  </li>
                 </ul>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Quando houver mercado secundário, o preço de negociação dos tokens pode ser inferior ao valor investido, resultando em perdas para o investidor que desejar vender antes do vencimento.
-                </p>
-              </div>
+              </section>
 
-              {/* Risco 6 */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  6. Risco Operacional e Tecnológico
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <strong>INVESTIMENTOS EM TOKENS DIGITAIS ENVOLVEM RISCOS TECNOLÓGICOS ESPECÍFICOS.</strong>
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  A tokenização de ativos utiliza tecnologia blockchain, que está sujeita a riscos específicos:
-                </p>
-                <ul className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <li><strong>Risco de smart contract:</strong> Falhas ou vulnerabilidades em contratos inteligentes podem resultar em perdas irrecuperáveis</li>
-                  <li><strong>Risco de rede blockchain:</strong> Congestionamento, forks, ou ataques à rede podem afetar transações e custódia</li>
-                  <li><strong>Risco de chaves privadas:</strong> Perda de acesso às chaves criptográficas pode resultar em perda permanente dos ativos</li>
-                  <li><strong>Risco de plataforma:</strong> Falhas técnicas, indisponibilidade de sistemas, ou descontinuação de serviços</li>
-                  <li><strong>Risco cibernético:</strong> Ataques hackers, phishing, malware ou outras ameaças de segurança digital</li>
-                </ul>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  A PLATAFORMA adota medidas de segurança de acordo com as melhores práticas de mercado, mas não pode garantir a inexistência de falhas ou violações de segurança.
-                </p>
-              </div>
+              <section className="mb-5">
+                <h2 className="h3 fw-semibold mb-3">Principais Riscos a serem considerados</h2>
 
-              {/* Risco 7 */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  7. Risco Regulatório e Legal
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <strong>MUDANÇAS NA LEGISLAÇÃO PODEM AFETAR SEUS INVESTIMENTOS.</strong>
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  O mercado de tokenização de ativos e investimento participativo está sujeito a evolução regulatória constante.
-                  Alterações na legislação, regulamentação ou interpretação de normas podem:
-                </p>
-                <ul className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <li>Afetar a capacidade de negociação dos tokens</li>
-                  <li>Impor novas obrigações ou restrições aos investidores</li>
-                  <li>Alterar o tratamento tributário dos investimentos</li>
-                  <li>Modificar direitos e obrigações previstos nos termos da oferta</li>
-                  <li>Impactar a continuidade de operações da plataforma ou do emissor</li>
-                </ul>
-              </div>
+                <div className="row g-4 mb-4">
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100 border-danger">
+                      <div className="card-body">
+                        <h3 className="h6 fw-semibold text-danger mb-3">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="me-2"
+                          >
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                            <line x1="12" y1="9" x2="12" y2="13" />
+                            <line x1="12" y1="17" x2="12.01" y2="17" />
+                          </svg>
+                          Risco de Perda Total
+                        </h3>
+                        <p className="mb-0">
+                          Existe a possibilidade real de perder 100% do valor investido caso a empresa não consiga gerar os
+                          resultados esperados ou enfrente inadimplência dos devedores.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-              {/* Risco 8 */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  8. Limites de Investimento para Proteção do Investidor
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  De acordo com a Resolução CVM 88/2022, os investidores estão sujeitos a limites de investimento anual em ofertas públicas de distribuição de valores mobiliários realizadas por meio de plataforma eletrônica de investimento participativo:
-                </p>
-                <div className="table-responsive mt-4 mb-4">
-                  <table className="table table-bordered">
-                    <thead className="table-light">
-                      <tr>
-                        <th>Perfil do Investidor</th>
-                        <th>Limite Anual de Investimento</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Investidor com renda bruta anual ou montante de investimentos financeiros <strong>inferior a R$ 100.000,00</strong></td>
-                        <td>Até <strong>R$ 10.000,00</strong> por ano</td>
-                      </tr>
-                      <tr>
-                        <td>Investidor com renda bruta anual ou montante de investimentos financeiros <strong>igual ou superior a R$ 100.000,00</strong></td>
-                        <td>Até <strong>10% da renda bruta anual ou do montante de investimentos financeiros</strong></td>
-                      </tr>
-                      <tr>
-                        <td><strong>Investidor Qualificado</strong> (conforme Resolução CVM 30/2021)</td>
-                        <td><strong>Sem limite</strong></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100 border-warning">
+                      <div className="card-body">
+                        <h3 className="h6 fw-semibold text-warning mb-3">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="me-2"
+                          >
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="12" y1="8" x2="12" y2="12" />
+                            <line x1="12" y1="16" x2="12.01" y2="16" />
+                          </svg>
+                          Baixa Liquidez
+                        </h3>
+                        <p className="mb-0">
+                          Os valores mobiliários adquiridos não são negociados em mercados organizados, o que pode dificultar
+                          ou impossibilitar a venda dos ativos quando você desejar.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100 border-info">
+                      <div className="card-body">
+                        <h3 className="h6 fw-semibold text-info mb-3">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="me-2"
+                          >
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="16" y1="13" x2="8" y2="13" />
+                            <line x1="16" y1="17" x2="8" y2="17" />
+                            <polyline points="10 9 9 9 8 9" />
+                          </svg>
+                          Ausência de Análise Prévia da CVM
+                        </h3>
+                        <p className="mb-0">
+                          A CVM não analisa previamente as ofertas dispensadas de registro. A responsabilidade pela veracidade
+                          das informações é da empresa emissora e da plataforma.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100 border-secondary">
+                      <div className="card-body">
+                        <h3 className="h6 fw-semibold text-secondary mb-3">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="me-2"
+                          >
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                          </svg>
+                          Dificuldade de Avaliação
+                        </h3>
+                        <p className="mb-0">
+                          Pode haver dificuldade na avaliação dos ativos pela falta de informação pública e ausência de
+                          obrigatoriedade de demonstrações financeiras auditadas.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Estes limites aplicam-se ao somatório de todos os investimentos realizados pelo investidor em todas as plataformas de investimento participativo no período de 12 meses.
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  O investidor é responsável por controlar e respeitar seus limites de investimento, declarando de forma verídica sua renda bruta anual e montante de investimentos financeiros.
-                </p>
-              </div>
+              </section>
 
-              {/* Risco 9 */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  9. Papel e Responsabilidades da Plataforma
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  A PLATAFORMA atua como intermediária tecnológica, facilitando a conexão entre emissores de valores mobiliários e investidores.
-                  É importante compreender que:
+              <section className="mb-5">
+                <h2 className="h3 fw-semibold mb-3">Quando devo assinar o Termo?</h2>
+                <p className="mb-4">
+                  O Termo de Ciência e Risco deve ser assinado <strong>antes de confirmar qualquer investimento</strong>{" "}
+                  através da plataforma TokenOne. Sem a assinatura deste documento, não será possível prosseguir com o
+                  investimento.
                 </p>
-                <ul className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <li>A PLATAFORMA <strong>NÃO é instituição financeira</strong> e não capta recursos para investimento próprio</li>
-                  <li>A PLATAFORMA <strong>NÃO presta assessoria de investimentos</strong> nem recomenda investimentos específicos</li>
-                  <li>A PLATAFORMA <strong>NÃO garante</strong> a rentabilidade, liquidez ou retorno de qualquer investimento</li>
-                  <li>A PLATAFORMA <strong>NÃO se responsabiliza</strong> por perdas decorrentes de inadimplência dos emissores</li>
-                  <li>A PLATAFORMA realiza análise prévia dos emissores e ofertas, mas <strong>NÃO garante</strong> a veracidade integral das informações prestadas ou o sucesso dos empreendimentos</li>
-                  <li>O investidor é responsável por <strong>realizar sua própria análise</strong> e avaliação dos riscos antes de investir</li>
+                <p className="mb-4">
+                  Durante o processo de investimento na plataforma, você será solicitado a ler atentamente e assinar
+                  eletronicamente o Termo. Certifique-se de compreender todos os riscos antes de assinar.
+                </p>
+              </section>
+
+              <section className="mb-5">
+                <h2 className="h3 fw-semibold mb-3">Como minimizar os riscos?</h2>
+                <div className="alert alert-success border-success" role="alert">
+                  <h3 className="h6 fw-semibold mb-3">Recomendações para investidores:</h3>
+                  <ul className="mb-0">
+                    <li className="mb-2">
+                      <strong>Diversifique seus investimentos:</strong> Não coloque todo seu capital em uma única oferta.
+                      Distribua seus recursos entre diferentes projetos e setores.
+                    </li>
+                    <li className="mb-2">
+                      <strong>Leia toda a documentação:</strong> Analise cuidadosamente as Informações Essenciais da Oferta,
+                      a Lâmina da Operação e os documentos jurídicos antes de investir.
+                    </li>
+                    <li className="mb-2">
+                      <strong>Invista apenas o que pode perder:</strong> Utilize recursos que, se perdidos, não comprometerão
+                      sua segurança financeira e qualidade de vida.
+                    </li>
+                    <li className="mb-2">
+                      <strong>Utilize o fórum de dúvidas:</strong> Faça perguntas aos responsáveis pela oferta para esclarecer
+                      qualquer ponto que não esteja claro.
+                    </li>
+                    <li className="mb-2">
+                      <strong>Respeite seu perfil de risco:</strong> Invista de acordo com sua tolerância ao risco e objetivos
+                      financeiros identificados no questionário de suitability.
+                    </li>
+                  </ul>
+                </div>
+              </section>
+
+              <section className="mb-5">
+                <h2 className="h3 fw-semibold mb-3">Baixar o Termo Oficial</h2>
+                <p className="mb-4">
+                  Você pode baixar o Termo de Ciência e Risco do Investidor em formato PDF para leitura prévia. No entanto,
+                  lembre-se de que a assinatura eletrônica oficial deve ser realizada através da plataforma TokenOne durante o
+                  processo de investimento.
+                </p>
+                <div className="d-flex gap-3 flex-wrap">
+                  <a
+                    href="/docs/Termo-de-Ciência-de-Riscos-do-Investidor-Tokenone.pdf"
+                    className="btn btn-primary btn-lg px-4"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="me-2"
+                    >
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Baixar Termo (PDF)
+                  </a>
+                </div>
+              </section>
+
+              <section className="mb-5">
+                <div className="alert alert-danger border-danger" role="alert">
+                  <h2 className="h5 fw-bold mb-3">AVISO IMPORTANTE DA CVM:</h2>
+                  <p className="mb-2">
+                    AS SOCIEDADES EMPRESÁRIAS DE PEQUENO PORTE E AS OFERTAS APRESENTADAS NESTA PLATAFORMA ESTÃO AUTOMATICAMENTE
+                    DISPENSADAS DE REGISTRO PELA COMISSÃO DE VALORES MOBILIÁRIOS - CVM.
+                  </p>
+                  <p className="mb-2">
+                    <strong>A CVM NÃO ANALISA PREVIAMENTE AS OFERTAS.</strong>
+                  </p>
+                  <p className="mb-2">
+                    AS OFERTAS REALIZADAS NÃO IMPLICAM, POR PARTE DA CVM, A GARANTIA DA VERACIDADE DAS INFORMAÇÕES PRESTADAS, DE
+                    ADEQUAÇÃO À LEGISLAÇÃO VIGENTE OU JULGAMENTO SOBRE A QUALIDADE DA SOCIEDADE EMPRESÁRIA DE PEQUENO PORTE.
+                  </p>
+                  <p className="mb-0">
+                    <strong>
+                      ANTES DE ACEITAR UMA OFERTA, LEIA COM ATENÇÃO AS INFORMAÇÕES ESSENCIAIS DA OFERTA, EM ESPECIAL A SEÇÃO DE
+                      ALERTAS SOBRE RISCOS.
+                    </strong>
+                  </p>
+                </div>
+              </section>
+
+              <section className="mb-5">
+                <h2 className="h3 fw-semibold mb-3">Dúvidas ou mais informações?</h2>
+                <p className="mb-3">
+                  Para esclarecer dúvidas sobre o Termo de Ciência e Risco ou sobre o processo de investimento, consulte também:
+                </p>
+                <ul className="mb-0">
+                  <li className="mb-2">
+                    <a href="/material-didatico" className="text-decoration-none">
+                      Material Didático do Investidor
+                    </a>{" "}
+                    - Guia completo sobre investimento em crowdfunding
+                  </li>
+                  <li className="mb-2">
+                    <a href="/faq" className="text-decoration-none">
+                      Perguntas Frequentes
+                    </a>{" "}
+                    - Respostas para as dúvidas mais comuns
+                  </li>
+                  <li className="mb-2">
+                    <a href="/contato?canal=Fale conosco" className="text-decoration-none">
+                      Fale Conosco
+                    </a>{" "}
+                    - Entre em contato com nossa equipe
+                  </li>
                 </ul>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  A divulgação de ofertas na PLATAFORMA não representa recomendação de investimento. Toda decisão de investimento deve ser baseada em análise própria do investidor.
-                </p>
-              </div>
+              </section>
 
-              {/* Risco 10 */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  10. Informações e Due Diligence
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <strong>É FUNDAMENTAL QUE O INVESTIDOR REALIZE SUA PRÓPRIA ANÁLISE.</strong>
+              <footer className="border-top pt-4 mt-5 text-secondary">
+                <p className="small mb-0">
+                  <strong>TokenOne LTDA</strong>
+                  <br />
+                  CNPJ: 37.728.588/0001-04
+                  <br />
+                  Rua José Tavares Siqueira, nº 97, Conjunto 43
+                  <br />
+                  CEP 03085-030, Tatuapé, São Paulo/SP
                 </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Antes de realizar qualquer investimento, o investidor deve:
-                </p>
-                <ul className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <li>Ler integralmente o <strong>documento de oferta</strong> e todos os anexos</li>
-                  <li>Compreender o modelo de negócio do emissor</li>
-                  <li>Avaliar as demonstrações financeiras e projeções apresentadas</li>
-                  <li>Verificar a existência e qualidade de garantias oferecidas</li>
-                  <li>Analisar o histórico e reputação do emissor e seus administradores</li>
-                  <li>Consultar profissionais especializados (contadores, advogados, consultores financeiros) se necessário</li>
-                  <li>Considerar sua situação financeira pessoal, objetivos de investimento e tolerância a risco</li>
-                </ul>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  As informações disponibilizadas na PLATAFORMA são fornecidas pelos emissores. Embora a PLATAFORMA realize verificações preliminares,
-                  o investidor deve conduzir sua própria análise e não deve confiar exclusivamente nas informações apresentadas.
-                </p>
-              </div>
-
-              {/* Diversificação */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  11. Importância da Diversificação
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <strong>NÃO CONCENTRE TODO O SEU PATRIMÔNIO EM UM ÚNICO INVESTIMENTO.</strong>
-                </p>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  A diversificação é uma estratégia fundamental de gestão de risco. Recomenda-se que o investidor:
-                </p>
-                <ul className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <li>Não invista recursos que possam fazer falta no curto prazo</li>
-                  <li>Não comprometa mais do que uma pequena parcela de seu patrimônio em investimentos de alto risco</li>
-                  <li>Diversifique entre diferentes emissores, setores e tipos de ativos</li>
-                  <li>Mantenha uma reserva de emergência em investimentos líquidos e de baixo risco</li>
-                  <li>Considere seu horizonte de investimento e necessidades futuras de recursos</li>
-                </ul>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Investimentos em empresas de pequeno porte devem representar apenas uma parcela do portfólio total do investidor, compatível com seu perfil de risco.
-                </p>
-              </div>
-
-              {/* Declaração Final */}
-              <div className="mb-5">
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#1e293b" }}>
-                  12. Declaração de Ciência e Aceitação
-                </h2>
-                <p className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  Ao aceitar este Termo de Ciência de Risco, o investidor declara que:
-                </p>
-                <ul className="text-secondary" style={{ lineHeight: 1.8 }}>
-                  <li>Leu e compreendeu integralmente o conteúdo deste documento</li>
-                  <li>Está ciente de todos os riscos mencionados e de que pode perder a totalidade do capital investido</li>
-                  <li>Compreende que os investimentos não são garantidos pelo FGC ou qualquer outro mecanismo de garantia governamental</li>
-                  <li>Está ciente de que pode enfrentar dificuldades ou impossibilidade de resgatar seus investimentos antes do vencimento</li>
-                  <li>Compreende o papel limitado da PLATAFORMA e que ela não garante rentabilidade ou se responsabiliza por inadimplência dos emissores</li>
-                  <li>Realizou ou realizará sua própria análise dos investimentos e não se baseia exclusivamente nas informações fornecidas pela PLATAFORMA</li>
-                  <li>Possui condições financeiras para suportar eventual perda total do capital investido sem comprometer seu padrão de vida</li>
-                  <li>Consultou ou teve a oportunidade de consultar profissionais especializados para avaliar a adequação dos investimentos ao seu perfil</li>
-                  <li>Declara de forma verídica sua renda bruta anual e montante de investimentos financeiros para fins de aplicação dos limites regulatórios</li>
-                  <li>Assume integral responsabilidade por suas decisões de investimento</li>
-                </ul>
-              </div>
-
-              {/* Alert Final */}
-              <div className="alert alert-danger mb-5" role="alert" style={{ borderLeft: "4px solid #dc2626", borderRadius: "0.5rem" }}>
-                <h5 className="alert-heading fw-bold">
-                  <i className="bi bi-shield-exclamation me-2"></i>
-                  Advertência Final
-                </h5>
-                <p className="mb-2">
-                  <strong>RENTABILIDADE PASSADA NÃO REPRESENTA GARANTIA DE RESULTADOS FUTUROS.</strong>
-                </p>
-                <p className="mb-2">
-                  <strong>LEIA ATENTAMENTE TODOS OS DOCUMENTOS DA OFERTA ANTES DE INVESTIR.</strong>
-                </p>
-                <p className="mb-0">
-                  <strong>EM CASO DE DÚVIDAS, CONSULTE UM PROFISSIONAL ESPECIALIZADO.</strong>
-                </p>
-              </div>
-
-              {/* Footer Info */}
-              <div className="p-4 rounded-3 mb-4" style={{ backgroundColor: "#f8fafc", border: "1px solid #e2e8f0" }}>
-                <p className="text-secondary mb-2" style={{ fontSize: "0.875rem", lineHeight: 1.6 }}>
-                  <strong>Token One LTDA</strong> | CNPJ: 37.728.588/0001-04
-                </p>
-                <p className="text-secondary mb-2" style={{ fontSize: "0.875rem", lineHeight: 1.6 }}>
-                  Plataforma Eletrônica de Investimento Participativo em processo de autorização junto à CVM.
-                </p>
-                <p className="text-secondary mb-0" style={{ fontSize: "0.875rem", lineHeight: 1.6 }}>
-                  Para dúvidas ou mais informações, entre em contato através da nossa <a href="/contato">página de contato</a>.
-                </p>
-              </div>
-
-              {/* Last Update */}
-              <p className="text-muted text-center" style={{ fontSize: "0.875rem" }}>
-                Última atualização: 15 de outubro de 2025
-              </p>
-            </div>
+              </footer>
+            </article>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </main>
   );
 }

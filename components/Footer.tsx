@@ -90,6 +90,7 @@ const sections: FooterSection[] = [
     links: [
       { label: "Termos e Condições", href: "/termos" },
       { label: "Política de Privacidade (LGPD)", href: "/privacidade" },
+      { label: "Termo de Ciência e Risco", href: "/termo-ciencia-risco" },
     ],
   },
   {

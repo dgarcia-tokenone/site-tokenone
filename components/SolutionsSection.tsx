@@ -26,6 +26,47 @@ type SolutionContent = {
 
 const solutions: readonly SolutionContent[] = [
   {
+    id: "caas",
+    label: "Crypto as a Service",
+    headline: "Crypto as a Service sem fricção",
+    description:
+      "Ofereça carteiras whitelabel, emissão de stablecoins e operações OTC com governança corporativa.",
+    valueTitle: "Como entregamos valor",
+    valueBullets: [
+      "Infraestrutura de custódia MPC com políticas granulares: aprovação multi-assinatura, whitelisting e limites por transação/período",
+      "Due diligence KYB corporativo: validação de beneficiários finais, screening de sanções (OFAC, ONU) e monitoramento AML on-chain",
+      "Automação contábil e fiscal: conciliação de carteiras, apuração de IR (ganho de capital), relatórios SPED e DeSTDA",
+    ],
+    highlightTitle: "Recursos em destaque",
+    highlightBullets: [
+      "On/off-ramp integrado: gateways fiat licenciados, Pix API (SPI) e reconciliação bancária automatizada (OFX/CNAB)",
+      "Treasury management: emissão de stablecoins lastreadas, yield farming institucional e gestão de liquidez multi-chain",
+      "Monitoramento SOC 24x7: detecção de anomalias comportamentais, alertas em tempo real e seguro de custódia até US$ 100M",
+    ],
+    metrics: [
+      {
+        value: "99.95%",
+        label: "SLA de disponibilidade",
+        description: "Infraestrutura redundante com observabilidade completa.",
+        progress: 95,
+      },
+      {
+        value: "ISO",
+        label: "Controles de segurança",
+        description: "Políticas alinhadas a ISO 27001 e auditorias recorrentes.",
+        progress: 85,
+      },
+      {
+        value: "24/7",
+        label: "Mesa OTC assistida",
+        description: "Suporte corporativo com SLAs para tesourarias e custódia.",
+        progress: 90,
+      },
+    ],
+    calloutTitle: "Custódia MPC e auditoria 24x7",
+    calloutDescription: "Integre com Fireblocks, BitGo e provedores de seguro especializado.",
+  },
+  {
     id: "tokenizacao",
     label: "Tokenização",
     headline: "Tokenize qualquer ativo em semanas",
@@ -107,51 +148,10 @@ const solutions: readonly SolutionContent[] = [
     calloutTitle: "Distribuição multicanal",
     calloutDescription: "Portal dedicado para emissores, investidores e parceiros com jornadas personalizadas.",
   },
-  {
-    id: "caas",
-    label: "Crypto as a Service",
-    headline: "Crypto as a Service sem fricção",
-    description:
-      "Ofereça carteiras whitelabel, emissão de stablecoins e operações OTC com governança corporativa.",
-    valueTitle: "Como entregamos valor",
-    valueBullets: [
-      "Infraestrutura de custódia MPC com políticas granulares: aprovação multi-assinatura, whitelisting e limites por transação/período",
-      "Due diligence KYB corporativo: validação de beneficiários finais, screening de sanções (OFAC, ONU) e monitoramento AML on-chain",
-      "Automação contábil e fiscal: conciliação de carteiras, apuração de IR (ganho de capital), relatórios SPED e DeSTDA",
-    ],
-    highlightTitle: "Recursos em destaque",
-    highlightBullets: [
-      "On/off-ramp integrado: gateways fiat licenciados, Pix API (SPI) e reconciliação bancária automatizada (OFX/CNAB)",
-      "Treasury management: emissão de stablecoins lastreadas, yield farming institucional e gestão de liquidez multi-chain",
-      "Monitoramento SOC 24x7: detecção de anomalias comportamentais, alertas em tempo real e seguro de custódia até US$ 100M",
-    ],
-    metrics: [
-      {
-        value: "99.95%",
-        label: "SLA de disponibilidade",
-        description: "Infraestrutura redundante com observabilidade completa.",
-        progress: 95,
-      },
-      {
-        value: "ISO",
-        label: "Controles de segurança",
-        description: "Políticas alinhadas a ISO 27001 e auditorias recorrentes.",
-        progress: 85,
-      },
-      {
-        value: "24/7",
-        label: "Mesa OTC assistida",
-        description: "Suporte corporativo com SLAs para tesourarias e custódia.",
-        progress: 90,
-      },
-    ],
-    calloutTitle: "Custódia MPC e auditoria 24x7",
-    calloutDescription: "Integre com Fireblocks, BitGo e provedores de seguro especializado.",
-  },
 ] as const;
 
 export default function SolutionsSection() {
-  const [activeTab, setActiveTab] = useState<SolutionContent["id"]>("tokenizacao");
+  const [activeTab, setActiveTab] = useState<SolutionContent["id"]>("caas");
   const activeSolution = solutions.find((solution) => solution.id === activeTab) ?? solutions[0];
 
   return (
