@@ -872,8 +872,13 @@ export default function OQueSaoTokensPage() {
                     <li className="mb-2">Diversifique seus investimentos</li>
                   </ol>
                   <div className="d-flex gap-3 flex-wrap">
-                    <a href="/solucoes" className="btn btn-success">
-                      Ver Oportunidades
+                    <a
+                      href="https://app.tokenone.com.br/authentication?organizationId=5rSaRhby9TbL7nmJa6rp"
+                      className="btn btn-success"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Ver Oportunidades Disponíveis
                     </a>
                     <a href="/material-didatico" className="btn btn-outline-success">
                       Material Didático Completo
