@@ -458,6 +458,7 @@ body {
   .navbar-logo {
     height: 60px;
     width: auto;
+    max-width: 180px;
     display: block;
   }
 
@@ -576,13 +577,27 @@ body {
   background: #22c55e;
   color: #fff;
   box-shadow: 0 12px 30px rgba(34, 197, 94, 0.35);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, bottom 0.3s ease;
   z-index: 1030;
 }
 
 .whatsapp-fab:hover {
   transform: translateY(-2px);
   box-shadow: 0 16px 40px rgba(34, 197, 94, 0.45);
+}
+
+// Adjust WhatsApp FAB when cookie banner is visible
+.cookie-banner ~ * .whatsapp-fab,
+body:has(.cookie-banner) .whatsapp-fab {
+  bottom: calc(1.5rem + 180px);
+
+  @media (min-width: 576px) {
+    bottom: calc(1.5rem + 140px);
+  }
+
+  @media (min-width: 992px) {
+    bottom: calc(1.5rem + 100px);
+  }
 }
 
 .partner-showcase {
@@ -716,6 +731,10 @@ body {
   .whatsapp-fab {
     right: 1rem;
     bottom: 1rem;
+  }
+
+  body:has(.cookie-banner) .whatsapp-fab {
+    bottom: calc(1rem + 200px);
   }
 }
 

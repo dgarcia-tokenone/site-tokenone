@@ -15,7 +15,8 @@
       "Bash(npx next lint)",
       "Bash(powershell:*)",
       "Bash(npx eslint:*)",
-      "Bash(npm run lint:*)"
+      "Bash(npm run lint:*)",
+      "Bash(if exist \"fix-quotes.js\" del \"fix-quotes.js\")"
     ],
     "deny": [],
     "ask": []

@@ -189,7 +189,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-7 g-4 py-4">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-7 g-4 py-4">
           {sections.map((section) => (
             <div key={section.title} className="col">
               <div className="footer-column-title d-flex align-items-center gap-2 mb-2">

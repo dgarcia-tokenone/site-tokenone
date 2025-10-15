@@ -68,10 +68,10 @@ export default function CookieBanner() {
               </p>
             </div>
             <div className="col-12 col-lg-4">
-              <div className="d-flex flex-column flex-sm-row gap-2">
+              <div className="d-grid gap-2 d-sm-flex">
                 <button
                   type="button"
-                  className="btn btn-outline-secondary flex-fill"
+                  className="btn btn-outline-secondary"
                   onClick={() => setShowPreferences(true)}
                   aria-label="Personalizar preferências de cookies"
                 >
@@ -79,7 +79,7 @@ export default function CookieBanner() {
                 </button>
                 <button
                   type="button"
-                  className="btn btn-outline-secondary flex-fill"
+                  className="btn btn-outline-secondary"
                   onClick={acceptNecessary}
                   aria-label="Aceitar apenas cookies necessários"
                 >
@@ -87,7 +87,7 @@ export default function CookieBanner() {
                 </button>
                 <button
                   type="button"
-                  className="btn btn-primary flex-fill"
+                  className="btn btn-primary flex-sm-fill"
                   onClick={acceptAll}
                   aria-label="Aceitar todos os cookies"
                 >
