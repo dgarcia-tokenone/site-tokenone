@@ -123,8 +123,8 @@ const sections: FooterSection[] = [
       </svg>
     ),
     links: [
-      { label: "Material didático", href: "#material" },
-      { label: "Ofertas encerradas", href: "#ofertas" },
+      { label: "Material didático", href: "/material-didatico" },
+      { label: "Ofertas encerradas", href: "/ofertas-encerradas" },
       { label: "Empresas inadimplentes", href: "#inadimplentes" },
     ],
   },
