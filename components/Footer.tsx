@@ -43,7 +43,7 @@ const sections: FooterSection[] = [
       </svg>
     ),
     links: [
-      { label: "O que são tokens?", href: "#tokens" },
+      { label: "O que são tokens?", href: "/o-que-sao-tokens" },
       { label: "O que é crowdfunding?", href: "#crowdfunding" },
     ],
   },
