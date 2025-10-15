@@ -65,7 +65,7 @@ const leadership = [
     bio: "Sólida experiência no mercado financeiro e iniciativas em Blockchain. Lidera a visão de produtos e parcerias estratégicas da plataforma Token One.",
     base: "São Paulo, SP",
     skills: ["Product vision", "Parcerias Estratégicas", "Regulação", "Blockchain"],
-    image: "/images/Luiz-Gustavo.png",
+    image: "/images/Luiz-Gustavo.webp",
     imageAlt: "Luiz Gustavo Nugnes",
   },
   {
@@ -74,7 +74,7 @@ const leadership = [
     bio: "Experiência sólida em análise de dados, produtos digitais e sistemas financeiros. Coordena operações, relacionamento com emissores e o roadmap operacional da plataforma.",
     base: "Paulínia, SP",
     skills: ["Operações", "Compliance", "Produtos Digitais", "Experiência do Emissor"],
-    image: "/images/Daniel-Garcia.png",
+    image: "/images/Daniel-Garcia.webp",
     imageAlt: "Daniel Garcia",
   },
   {
@@ -83,7 +83,7 @@ const leadership = [
     bio: "Responsável por arquitetura de integração, padrões de API e escalabilidade cloud. Conduz a implementação técnica de tokenização, custody connectors e ferramentas de monitoramento.",
     base: "São Paulo, SP",
     skills: ["Arquitetura Cloud", "Segurança e Observabilidade", "Integrações Blockchain"],
-    image: "/images/Rodinei.png",
+    image: "/images/Rodinei.webp",
     imageAlt: "Rodinei Lima",
   },
 ] as const;
@@ -138,7 +138,7 @@ export default function AboutPage() {
             <div className="col-12 col-lg-6">
               <div className="position-relative">
                 <Image
-                  src="/images/estrutura.png"
+                  src="/images/estrutura.webp"
                   alt="Estrutura tecnológica Token One"
                   width={960}
                   height={720}

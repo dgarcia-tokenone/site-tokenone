@@ -12,7 +12,7 @@ export default function Navbar() {
           <div className="col-auto">
             <Link className="navbar-brand d-flex align-items-center" href="/" aria-label="Página inicial">
               <Image
-                src="/logos/LogoWhiteTransparent.png"
+                src="/logos/LogoWhiteTransparent.webp"
                 alt="TokenOne"
                 width={233}
                 height={70}

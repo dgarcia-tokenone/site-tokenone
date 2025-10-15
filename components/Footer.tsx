@@ -90,6 +90,7 @@ const sections: FooterSection[] = [
     links: [
       { label: "Termos e Condições", href: "/termos" },
       { label: "Política de Privacidade (LGPD)", href: "/privacidade" },
+      { label: "Política de Cookies", href: "/politica-cookies" },
       { label: "Termo de Ciência e Risco", href: "/termo-ciencia-risco" },
       { label: "Declaração Investidor Qualificado", href: "/investidor-qualificado" },
     ],
@@ -177,7 +178,7 @@ export default function Footer() {
       <div className="container py-5">
         <div className="d-flex flex-column flex-lg-row align-items-start align-items-lg-center justify-content-between gap-4 pb-4 border-bottom border-light-subtle">
           <Link href="/" aria-label="Página inicial">
-            <Image src="/logos/LogoWhiteTransparent.png" alt="TokenOne" width={200} height={60} className="footer-logo" />
+            <Image src="/logos/LogoWhiteTransparent.webp" alt="TokenOne" width={200} height={60} className="footer-logo" />
           </Link>
           <div className="d-flex gap-3">
             {socials.map((social) => (

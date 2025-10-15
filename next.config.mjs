@@ -4,6 +4,21 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+
+  // Otimizações de performance
+  compress: true,
+
+  // Otimização de imagens
+  images: {
+    formats: ['image/webp', 'image/avif'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 60,
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+  },
+
   async headers() {
     const cspParts = [
       "default-src 'self'",
@@ -42,6 +57,47 @@ const nextConfig = {
       {
         source: '/(.*)',
         headers,
+      },
+      // Cache otimizado para assets estáticos
+      {
+        source: '/images/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/logos/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/icons/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/docs/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=86400, must-revalidate',
+          },
+          {
+            key: 'Content-Disposition',
+            value: 'inline',
+          },
+        ],
       },
     ];
   },

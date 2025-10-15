@@ -123,7 +123,7 @@ export default function ProcessoKycPldPage() {
                 <div className="mb-0">
                   <figure className="text-center">
                     <Image
-                      src="/images/veriff-fluxo-simplificado.png"
+                      src="/images/veriff-fluxo-simplificado.webp"
                       alt="Fluxo Simplificado do Processo de Verificação"
                       width={800}
                       height={600}
@@ -147,7 +147,7 @@ export default function ProcessoKycPldPage() {
                 <div className="mb-4">
                   <figure className="text-center">
                     <Image
-                      src="/images/veriff-motor-de-fraude.png"
+                      src="/images/veriff-motor-de-fraude.webp"
                       alt="Motor de Fraude Veriff"
                       width={800}
                       height={500}

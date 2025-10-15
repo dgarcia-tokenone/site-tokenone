@@ -5,7 +5,7 @@ import DevelopersSection from "@/components/DevelopersSection";
 
 const partnerLogos = [
   {
-    src: "/images/ISIBankwebp.png",
+    src: "/images/ISIBankwebp.webp",
     alt: "Logo ISI Bank",
     width: 160,
     height: 90,
@@ -60,7 +60,7 @@ export default function HomePage() {
               <div className="hero-media">
                 <span className="hero-chip">Tokenização, Distribuição, Governança</span>
                 <Image
-                  src="/images/MockTokenOne-transparente.png"
+                  src="/images/MockTokenOne-transparente.webp"
                   alt="Interface da plataforma Token One exibida em notebook e smartphone"
                   width={1040}
                   height={760}
