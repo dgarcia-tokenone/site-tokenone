@@ -125,7 +125,7 @@ const sections: FooterSection[] = [
     links: [
       { label: "Material didático", href: "/material-didatico" },
       { label: "Ofertas encerradas", href: "/ofertas-encerradas" },
-      { label: "Empresas inadimplentes", href: "#inadimplentes" },
+      { label: "Empresas inadimplentes", href: "/empresas-inadimplentes" },
     ],
   },
 ];
