@@ -509,6 +509,16 @@ body {
     display: block;
   }
 
+  .footer-nav-grid {
+    @media (min-width: 992px) {
+      > * {
+        flex: 0 0 25%;
+        width: 25%;
+        max-width: 25%;
+      }
+    }
+  }
+
   .footer-icon {
     display: inline-flex;
     align-items: center;
