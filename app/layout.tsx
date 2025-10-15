@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
-  icons: { icon: "/favicon.svg" },
   openGraph: {
     type: "website",
     locale: siteConfig.locale,
@@ -63,7 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "Organization",
               name: siteConfig.name,
               url: siteConfig.url,
-              logo: "/favicon.svg",
+              logo: "/icons/favicon.png",
               sameAs: [],
             }),
           }}

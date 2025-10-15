@@ -90,8 +90,6 @@ const sections: FooterSection[] = [
     links: [
       { label: "Termos e Condições", href: "/termos" },
       { label: "Política de Privacidade (LGPD)", href: "/privacidade" },
-      { label: "Termo de Ciência e Risco", href: "#risco" },
-      { label: "Declaração Investidor Qualificado", href: "#investidor" },
     ],
   },
   {
@@ -219,7 +217,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <div className="footer-bottom">
+        <div className="footer-bottom text-center">
           Copyright © {year}, TokenOne LTDA, inscrita no CNPJ 37.728.588/0001-04, com sede em São Paulo, SP.
         </div>
       </div>

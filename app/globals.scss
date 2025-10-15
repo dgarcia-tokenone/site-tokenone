@@ -456,7 +456,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
   .navbar-logo {
-    height: 56px;
+    height: 60px;
     width: auto;
     display: block;
   }
@@ -741,4 +741,60 @@ body {
 .hero-cta:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.6);
   outline-offset: 2px;
+}
+
+// About Hero Section - Gray Version
+.about-hero-section {
+  position: relative;
+  background: #3a3f47;
+  background-image:
+    radial-gradient(600px circle at 12% 18%, rgba(148, 163, 184, 0.16), transparent 60%),
+    radial-gradient(760px circle at 88% -10%, rgba(100, 116, 139, 0.12), transparent 65%);
+  color: #f8fafc;
+  overflow: hidden;
+}
+
+.about-hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(58, 63, 71, 0), rgba(30, 41, 59, 0.35) 65%, rgba(15, 23, 42, 0.65));
+  pointer-events: none;
+}
+
+.about-hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero-section .shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.about-hero-section .shape.shape-one {
+  width: 320px;
+  height: 320px;
+  background: rgba(148, 163, 184, 0.35);
+  top: -140px;
+  left: -130px;
+}
+
+.about-hero-section .shape.shape-two {
+  width: 240px;
+  height: 240px;
+  background: rgba(100, 116, 139, 0.28);
+  bottom: -120px;
+  right: -60px;
+}
+
+.about-hero-section .shape.shape-three {
+  width: 160px;
+  height: 160px;
+  background: rgba(71, 85, 105, 0.24);
+  bottom: 10%;
+  left: 15%;
 }

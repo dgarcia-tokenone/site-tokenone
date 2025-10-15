@@ -961,8 +961,6 @@ export default function OQueECrowdfundingPage() {
                   CNPJ: 37.728.588/0001-04
                   <br />
                   São Paulo, SP
-                  <br />
-                  Plataforma autorizada pela CVM - Resolução CVM 88/2022
                 </p>
               </footer>
             </article>
