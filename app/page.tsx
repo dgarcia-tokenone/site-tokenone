@@ -124,6 +124,7 @@ export default function HomePage() {
                   <div className="partner-logo-card h-100">
                     <Image
                       {...partner}
+                      alt={partner.alt}
                       className="partner-logo-image"
                       sizes="(max-width: 575px) 45vw, (max-width: 991px) 28vw, 180px"
                       style={{

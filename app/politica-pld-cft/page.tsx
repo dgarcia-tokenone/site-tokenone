@@ -27,8 +27,8 @@ export default function PoliticaPldCftPage() {
               <section className="mb-5">
                 <h2 className="h4 fw-semibold mb-3">Apresentação</h2>
                 <p className="mb-3">
-                  A TokenOne LTDA. ("TokenOne") apresenta sua Política de Prevenção e Combate à "Lavagem de Dinheiro e ao
-                  Financiamento ao Terrorismo".
+                  A TokenOne LTDA. (&quot;TokenOne&quot;) apresenta sua Política de Prevenção e Combate à &quot;Lavagem de Dinheiro e ao
+                  Financiamento ao Terrorismo&quot;.
                 </p>
                 <p className="mb-3">
                   A TokenOne é uma empresa com compromisso ético e consciente da sua responsabilidade socioambiental e do dever de
@@ -39,9 +39,9 @@ export default function PoliticaPldCftPage() {
                 </p>
                 <p className="mb-3">
                   Nesse sentido, a presente Política pretende fornecer orientação e diretrizes sobre o programa de Compliance e
-                  PLD/CFT (Prevenção a "lavagem de dinheiro" e Combate ao Financiamento do Terrorismo), que deve ser seguida por
+                  PLD/CFT (Prevenção a &quot;lavagem de dinheiro&quot; e Combate ao Financiamento do Terrorismo), que deve ser seguida por
                   todos os membros, colaboradores, parceiros, terceiros e prestadores de serviços relevantes da TokenOne no tocante
-                  aos compromissos éticos e à prevenção e combate à "lavagem de dinheiro e ao financiamento ao terrorismo".
+                  aos compromissos éticos e à prevenção e combate à &quot;lavagem de dinheiro e ao financiamento ao terrorismo&quot;.
                 </p>
                 <p className="mb-3">
                   Esta Política deverá ser sempre utilizada por todos os membros, colaboradores, parceiros, terceiros e prestadores
@@ -71,7 +71,7 @@ export default function PoliticaPldCftPage() {
                 <h2 className="h3 fw-semibold mb-3">1. OBJETIVO</h2>
                 <p className="mb-0">
                   A presente Política de Prevenção e Combate à Lavagem de Dinheiro ou Ocultação de Bens, Direitos e Valores e
-                  Financiamento do Terrorismo ("PLD-CFT") visa estabelecer princípios, diretrizes e procedimentos, nos termos da
+                  Financiamento do Terrorismo (&quot;PLD-CFT&quot;) visa estabelecer princípios, diretrizes e procedimentos, nos termos da
                   legislação em vigor, que devem ser observados por todos os membros, colaboradores, parceiros, terceiros e
                   prestadores de serviços relevantes da TokenOne no decorrer das suas operações comerciais, a fim de prevenir que
                   seus sistemas e sua estrutura operacional sejam utilizados para o cometimento de práticas de lavagem de dinheiro,
@@ -87,7 +87,7 @@ export default function PoliticaPldCftPage() {
                 </p>
                 <ul>
                   <li className="mb-2">
-                    <strong>Lei nº 9.613, de 3 de março de 1998</strong> - Dispõe sobre os crimes de "lavagem" ou ocultação de
+                    <strong>Lei nº 9.613, de 3 de março de 1998</strong> - Dispõe sobre os crimes de &quot;lavagem&quot; ou ocultação de
                     bens, direitos e valores; a prevenção da utilização do sistema financeiro para os ilícitos previstos nesta Lei;
                     cria o Conselho de Controle de Atividades Financeiras - COAF, e dá outras providências;
                   </li>
@@ -108,7 +108,7 @@ export default function PoliticaPldCftPage() {
                   </li>
                   <li className="mb-2">
                     <strong>Carta Circular BCB nº 4.001 de 29/01/2020</strong> – Divulga relação de operações e situações que podem
-                    configurar indícios de ocorrência dos crimes de "lavagem" ou ocultação de bens, direitos e valores, e de
+                    configurar indícios de ocorrência dos crimes de &quot;lavagem&quot; ou ocultação de bens, direitos e valores, e de
                     financiamento ao terrorismo.
                   </li>
                   <li className="mb-2">
@@ -141,9 +141,9 @@ export default function PoliticaPldCftPage() {
 
                 <h3 className="h5 fw-semibold mt-4 mb-3">Lavagem de dinheiro</h3>
                 <p className="mb-3">
-                  O Art. 1º da Lei 9.613/98 define a lavagem de dinheiro como o ato de "ocultar ou dissimular a natureza, origem,
+                  O Art. 1º da Lei 9.613/98 define a lavagem de dinheiro como o ato de &quot;ocultar ou dissimular a natureza, origem,
                   localização, disposição, movimentação ou propriedade de bens, direitos ou valores provenientes, direta ou
-                  indiretamente, de infração penal".
+                  indiretamente, de infração penal&quot;.
                 </p>
                 <p className="mb-4">
                   A Lavagem de Dinheiro, então, caracteriza-se por um conjunto de operações comerciais ou financeiras que visam
@@ -172,7 +172,7 @@ export default function PoliticaPldCftPage() {
                 </p>
                 <p className="mb-4">
                   <strong>Exemplo:</strong> João, envolvido em atividades ilícitas, possui uma grande quantia de dinheiro em
-                  espécie. Para começar o processo de "limpeza" desse dinheiro, ele decide depositar pequenas quantias em diferentes
+                  espécie. Para começar o processo de &quot;limpeza&quot; desse dinheiro, ele decide depositar pequenas quantias em diferentes
                   bancos ao longo de várias semanas para evitar suspeitas.
                 </p>
 
@@ -194,7 +194,7 @@ export default function PoliticaPldCftPage() {
                   aparentemente lícito. Essa integração pode ocorrer por meio de investimentos em negócios lícitos.
                 </p>
                 <p className="mb-0">
-                  <strong>Exemplo:</strong> Agora, com o dinheiro aparentemente "limpo", João investe na compra de um restaurante. O
+                  <strong>Exemplo:</strong> Agora, com o dinheiro aparentemente &quot;limpo&quot;, João investe na compra de um restaurante. O
                   estabelecimento opera legalmente e gera lucros legítimos. Portanto, qualquer receita futura do restaurante
                   parecerá completamente legal, mesmo que o investimento inicial tenha vindo de fundos ilícitos.
                 </p>
@@ -280,7 +280,7 @@ export default function PoliticaPldCftPage() {
                 <ul className="mb-4">
                   <li className="mb-2">
                     Identificar e ser capaz de comprovar a veracidade dos dados informados pelos estabelecimentos comerciais, seja
-                    ele pessoa física ou jurídica, conforme consta em seu Manual de "Conheça seu Cliente" ou "Know Your Customer".
+                    ele pessoa física ou jurídica, conforme consta em seu Manual de &quot;Conheça seu Cliente&quot; ou &quot;Know Your Customer&quot;.
                   </li>
                   <li className="mb-2">
                     Manter o cadastro dos estabelecimentos comerciais sempre atualizado, buscando exigir a renovação das informações
@@ -347,18 +347,18 @@ export default function PoliticaPldCftPage() {
                 <p className="mb-3">
                   Para fins de adequação às melhores práticas de identificação e qualificação dos clientes/usuários, a TokenOne terá
                   como parâmetro a Circular nº 3.978 de 2020 do Banco Central, nos termos de seu Manual de Cadastro de Clientes –
-                  "Know Your Customer – KYC" descritos em documento específico.
+                  &quot;Know Your Customer – KYC&quot; descritos em documento específico.
                 </p>
                 <p className="mb-3">
                   Recomenda-se que avaliação interna de risco seja atualizada em períodos não superiores a 12 (doze) meses, salvo
                   legislação específica aplicável a TokenOne que determine período diverso. Todos os clientes/usuários poderão,
-                  porventura, ser submetidos a lista de CPF's/CNPJ's restritivos e que não poderão utilizar/contratar os serviços
+                  porventura, ser submetidos a lista de CPF&apos;s/CNPJ&apos;s restritivos e que não poderão utilizar/contratar os serviços
                   ofertados pela TokenOne.
                 </p>
                 <p className="mb-4">
                   Dentre as análises específicas e singulares de cada cliente, serão observadas sempre características especiais e
                   que permitam a compreensão dos riscos inerentes ou o rastreio de indícios de conduta criminosa, nos termos
-                  descritos no Manual de Cadastro de Clientes – "Know Your Customer – KYC", da TokenOne, estabelecida em documento
+                  descritos no Manual de Cadastro de Clientes – &quot;Know Your Customer – KYC&quot;, da TokenOne, estabelecida em documento
                   próprio.
                 </p>
 
@@ -367,15 +367,15 @@ export default function PoliticaPldCftPage() {
                   A TokenOne analisará o perfil dos parceiros e prestadores de serviços terceirizados, conforme critérios internos,
                   podendo realizar procedimento de due diligence compatível com o perfil de risco do terceiro, a fim de conhecer os
                   reais riscos da contração, permitindo que ocorra dentro dos padrões legais e de modo transparente e idôneo, de
-                  acordo com os parâmetros estabelecidos no seu Manual de Cadastro e Credenciamento de Parceiros – "Know Your
-                  Partner"- KYP.
+                  acordo com os parâmetros estabelecidos no seu Manual de Cadastro e Credenciamento de Parceiros – &quot;Know Your
+                  Partner&quot;- KYP.
                 </p>
               </section>
 
               <section className="mb-5">
-                <h2 className="h3 fw-semibold mb-3">8. PESSOAS EXPOSTAS POLITICAMENTE ("PEP")</h2>
+                <h2 className="h3 fw-semibold mb-3">8. PESSOAS EXPOSTAS POLITICAMENTE (&quot;PEP&quot;)</h2>
                 <p className="mb-3">
-                  São considerados Pessoas Expostas Politicamente ("PEP") os agentes públicos que desempenham ou tenham
+                  São considerados Pessoas Expostas Politicamente (&quot;PEP&quot;) os agentes públicos que desempenham ou tenham
                   desempenhado, nos últimos cinco anos, no Brasil ou em países, territórios e dependências estrangeiras, cargos,
                   empregos ou funções públicas relevantes, assim bem como a verificação da condição de representante, familiar ou
                   estreito funcionário dessas pessoas, incluindo:
@@ -427,8 +427,8 @@ export default function PoliticaPldCftPage() {
                   <li className="mb-2">Monitoramento contínuo aprimorado do relacionamento comercial.</li>
                 </ul>
                 <p className="mb-0">
-                  Os Usuários identificados como politicamente expostos (PEP) são classificados de forma com risco "alto" e os
-                  relacionados são classificados com risco "médio", sendo submetidos a monitoramento de especial atenção, diligência
+                  Os Usuários identificados como politicamente expostos (PEP) são classificados de forma com risco &quot;alto&quot; e os
+                  relacionados são classificados com risco &quot;médio&quot;, sendo submetidos a monitoramento de especial atenção, diligência
                   reforçada, alinhada ao risco.
                 </p>
               </section>

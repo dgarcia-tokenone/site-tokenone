@@ -55,7 +55,7 @@ export default function OQueECrowdfundingPage() {
                     Definição Simples
                   </h3>
                   <p className="mb-0">
-                    <strong>Crowdfunding</strong> vem do inglês "crowd" (multidão) + "funding" (financiamento), ou seja,{" "}
+                    <strong>Crowdfunding</strong> vem do inglês &quot;crowd&quot; (multidão) + &quot;funding&quot; (financiamento), ou seja,{" "}
                     <strong>financiamento coletivo</strong>. É quando um grupo de pessoas se une para investir pequenas quantias em um
                     projeto, empresa ou causa, tornando possível a captação de recursos que, individualmente, seria mais difícil de
                     obter.
@@ -63,7 +63,7 @@ export default function OQueECrowdfundingPage() {
                 </div>
 
                 <h3 className="h5 fw-semibold mt-4 mb-3">Exemplo Prático</h3>
-                <p className="mb-3">Pense em uma "vaquinha online" para investimentos:</p>
+                <p className="mb-3">Pense em uma &quot;vaquinha online&quot; para investimentos:</p>
                 <ul className="mb-4">
                   <li className="mb-2">
                     <strong>Uma empresa precisa de R$ 500.000</strong> para crescer
@@ -479,7 +479,7 @@ export default function OQueECrowdfundingPage() {
                             Se a empresa crescer muito, sua participação pode se valorizar exponencialmente
                           </li>
                           <li className="mb-1">Possibilidade de receber dividendos se a empresa se tornar lucrativa</li>
-                          <li className="mb-1">Oportunidade de "exit" (venda da participação) com lucro</li>
+                          <li className="mb-1">Oportunidade de &quot;exit&quot; (venda da participação) com lucro</li>
                           <li className="mb-1">Potencial de multiplicar o investimento inicial várias vezes</li>
                         </ul>
                         <div className="alert alert-warning mb-0" role="alert">
@@ -619,7 +619,7 @@ export default function OQueECrowdfundingPage() {
                         <h4 className="h6 fw-semibold text-danger mb-3">Baixa Liquidez</h4>
                         <p className="small mb-0">
                           Não há garantia de que você conseguirá vender sua participação quando quiser. O investimento pode ficar
-                          "preso" por anos até um evento de liquidez (venda da empresa, IPO, etc.).
+                          &quot;preso&quot; por anos até um evento de liquidez (venda da empresa, IPO, etc.).
                         </p>
                       </div>
                     </div>

@@ -28,7 +28,7 @@ export default function TermosPage() {
                 </p>
                 <p className="mb-3">
                   Ao se cadastrar na Plataforma, disponível em app.TokenOne.com.br, você ingressa em um ambiente virtual detido e controlado
-                  por TokenOne LTDA ("TokenOne"), plataforma eletrônica que oferece serviços white‑label de gestão, emissão, oferta e
+                  por TokenOne LTDA (&quot;TokenOne&quot;), plataforma eletrônica que oferece serviços white‑label de gestão, emissão, oferta e
                   distribuição de ativos TokenOne dos (incluindo tokens fungíveis e não‑fungíveis), em conformidade às normas da CVM e do
                   Banco Central do Brasil, bem como melhores práticas de governança e segurança.
                 </p>
@@ -92,7 +92,7 @@ export default function TermosPage() {
                 </p>
 
                 <p className="mb-0">
-                  O termo "Usuário" ou "Usuários", quando citados sozinhos, referem-se a todos os Usuários, seja Emissor ou Comprador.
+                  O termo &quot;Usuário&quot; ou &quot;Usuários&quot;, quando citados sozinhos, referem-se a todos os Usuários, seja Emissor ou Comprador.
                 </p>
               </section>
 
@@ -140,8 +140,8 @@ export default function TermosPage() {
               <section className="mb-5">
                 <h2 className="h3 fw-semibold mb-3">3. COMO SE CADASTRAR NA TOKEN ONE?</h2>
                 <p className="mb-3">
-                  Para o cadastro e utilização da Plataforma, o Usuário Comprador deverá acessar o site "https://tokenone.com.br/home" e
-                  através da aba "Entrar", realizar seu cadastro fornecendo as informações: nome, CPF e e-mail.
+                  Para o cadastro e utilização da Plataforma, o Usuário Comprador deverá acessar o site &quot;https://tokenone.com.br/home&quot; e
+                  através da aba &quot;Entrar&quot;, realizar seu cadastro fornecendo as informações: nome, CPF e e-mail.
                 </p>
                 <p className="mb-3">
                   Os dados cadastrais informados servirão de base para a geração de uma conta de identificação, a partir da qual o Usuário

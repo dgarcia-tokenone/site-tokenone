@@ -57,8 +57,8 @@ export default function MaterialDidaticoPage() {
                     ALERTA DA CVM
                   </h4>
                   <p className="mb-0">
-                    Este manual é uma ferramenta educacional e não deve, em hipótese alguma, ser confundido com as "Informações
-                    Essenciais da Oferta". A leitura atenta de todos os documentos específicos de cada oferta é indispensável antes de
+                    Este manual é uma ferramenta educacional e não deve, em hipótese alguma, ser confundido com as &quot;Informações
+                    Essenciais da Oferta&quot;. A leitura atenta de todos os documentos específicos de cada oferta é indispensável antes de
                     qualquer investimento.
                   </p>
                 </div>
@@ -80,8 +80,8 @@ export default function MaterialDidaticoPage() {
 
                 <h3 className="h5 fw-semibold mt-4 mb-3">2.2. Acesso e Análise das Ofertas</h3>
                 <p className="mb-3">
-                  Após a aprovação do seu cadastro, você terá acesso aos "Pools" (operações) de investimento disponíveis. Cada oferta é
-                  acompanhada por um pacote completo de "Documentos da Operação", que inclui:
+                  Após a aprovação do seu cadastro, você terá acesso aos &quot;Pools&quot; (operações) de investimento disponíveis. Cada oferta é
+                  acompanhada por um pacote completo de &quot;Documentos da Operação&quot;, que inclui:
                 </p>
                 <ul className="mb-4">
                   <li className="mb-2">

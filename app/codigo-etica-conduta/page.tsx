@@ -27,7 +27,7 @@ export default function CodigoEticaCondutaPage() {
 
               <section className="mb-5">
                 <p className="mb-3">
-                  O presente Código de Ética e Conduta ("Código") da TokenOne LTDA. ("TokenOne"), inscrita sob o CNPJ nº
+                  O presente Código de Ética e Conduta (&quot;Código&quot;) da TokenOne LTDA. (&quot;TokenOne&quot;), inscrita sob o CNPJ nº
                   37.728.588/0001-04 estabelece os princípios éticos e as diretrizes de conduta a serem observados no desenvolvimento das
                   atividades profissionais e relacionamentos internos e externos da empresa.
                 </p>
@@ -273,7 +273,7 @@ export default function CodigoEticaCondutaPage() {
                 <h2 className="h3 fw-semibold mb-3">5. Anticorrupção e Fraude</h2>
                 <p className="mb-3">
                   A TokenOne segue as diretrizes das leis anticorrupção, incluindo, mas não se limitando, à Lei Federal nº 12.846/2013, Lei
-                  Federal nº 8.429/1992, bem como às resoluções da Comissão de Ética Pública ("Normas Anticorrupção").
+                  Federal nº 8.429/1992, bem como às resoluções da Comissão de Ética Pública (&quot;Normas Anticorrupção&quot;).
                 </p>
                 <p className="mb-3">
                   A aplicação da Lei Anticorrupção está direcionada a qualquer empresa brasileira, dentro ou fora do país, de modo a

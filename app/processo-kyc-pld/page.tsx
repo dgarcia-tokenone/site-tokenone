@@ -42,7 +42,7 @@ export default function ProcessoKycPldPage() {
                 </p>
                 <p className="mb-4">
                   Para este fim, nossa plataforma utiliza o serviço de verificação de identidade da Veriff, cuja metodologia de
-                  trabalho e componentes técnicos estão detalhados neste documento, conforme a "Technical Overview of Veriff Service".
+                  trabalho e componentes técnicos estão detalhados neste documento, conforme a &quot;Technical Overview of Veriff Service&quot;.
                 </p>
 
                 <div className="mb-4">

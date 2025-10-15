@@ -54,14 +54,14 @@ export default function OQueSaoTokensPage() {
                     Definição Simples
                   </h3>
                   <p className="mb-0">
-                    <strong>Token</strong> é uma representação digital de um ativo do mundo real. É como ter um "certificado digital"
+                    <strong>Token</strong> é uma representação digital de um ativo do mundo real. É como ter um &quot;certificado digital&quot;
                     que comprova que você é dono de uma parte (ou da totalidade) de algo valioso - pode ser um imóvel, uma obra de
                     arte, recebíveis de uma empresa, ou qualquer outro bem.
                   </p>
                 </div>
 
                 <h3 className="h5 fw-semibold mt-4 mb-3">Exemplo Prático</h3>
-                <p className="mb-3">Pense em um token como uma "fatia de bolo":</p>
+                <p className="mb-3">Pense em um token como uma &quot;fatia de bolo&quot;:</p>
                 <ul className="mb-4">
                   <li className="mb-2">
                     <strong>O bolo inteiro</strong> seria, por exemplo, um apartamento de R$ 1.000.000
@@ -92,7 +92,7 @@ export default function OQueSaoTokensPage() {
               <section className="mb-5">
                 <h2 className="h3 fw-semibold mb-3">O que é Tokenização?</h2>
                 <p className="mb-4">
-                  <strong>Tokenização</strong> é o processo de transformar um ativo do mundo real em tokens digitais. É como "digitalizar"
+                  <strong>Tokenização</strong> é o processo de transformar um ativo do mundo real em tokens digitais. É como &quot;digitalizar&quot;
                   a propriedade de algo, dividindo-a em pequenas partes que podem ser facilmente compradas, vendidas ou negociadas.
                 </p>
 
@@ -393,8 +393,8 @@ export default function OQueSaoTokensPage() {
                     <div id="collapse3" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
                       <div className="accordion-body">
                         <p className="mb-2">
-                          Todos os tokens são registrados em <strong>blockchain</strong>, uma tecnologia que funciona como um "livro de
-                          registros" público e impossível de alterar.
+                          Todos os tokens são registrados em <strong>blockchain</strong>, uma tecnologia que funciona como um &quot;livro de
+                          registros&quot; público e impossível de alterar.
                         </p>
                         <p className="mb-2">
                           <strong>Isso significa:</strong>
@@ -462,7 +462,7 @@ export default function OQueSaoTokensPage() {
                           <li className="mb-1">Um pouco em arte</li>
                         </ul>
                         <p className="mb-0">
-                          <em>"Não coloque todos os ovos na mesma cesta"</em> - com tokens, isso fica muito mais fácil!
+                          <em>&quot;Não coloque todos os ovos na mesma cesta&quot;</em> - com tokens, isso fica muito mais fácil!
                         </p>
                       </div>
                     </div>
