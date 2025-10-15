@@ -875,8 +875,6 @@ export default function OQueSaoTokensPage() {
                     <a
                       href="https://app.tokenone.com.br/authentication?organizationId=5rSaRhby9TbL7nmJa6rp"
                       className="btn btn-success"
-                      target="_blank"
-                      rel="noopener noreferrer"
                     >
                       Ver Oportunidades Disponíveis
                     </a>
