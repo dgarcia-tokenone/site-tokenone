@@ -3,6 +3,10 @@
 
 // 1. Configuração (obrigatório)
 @import "bootstrap/scss/functions";
+
+// IMPORTANTE: Importar variáveis customizadas ANTES das variáveis do Bootstrap
+@import "./custom-variables";
+
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";

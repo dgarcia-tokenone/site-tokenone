@@ -1,0 +1,19 @@
+// Variáveis customizadas que sobrescrevem o Bootstrap
+// Este arquivo deve ser importado ANTES de bootstrap/scss/variables
+
+// Cores customizadas
+$primary: #3160ff;
+$secondary: #0f172a;
+$success: #16a34a;
+$info: #0ea5e9;
+$warning: #f59e0b;
+$danger: #ef4444;
+$light: #f8fafc;
+$dark: #020617;
+
+// Fonte
+$font-family-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// Body
+$body-color: #0f172a;
+$body-bg: #ffffff;

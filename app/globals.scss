@@ -1,26 +1,5 @@
-:root {
-  color-scheme: light;
-  --bs-primary: #3160ff;
-  --bs-primary-rgb: 49, 96, 255;
-  --bs-secondary: #0f172a;
-  --bs-secondary-rgb: 15, 23, 42;
-  --bs-success: #16a34a;
-  --bs-success-rgb: 22, 163, 74;
-  --bs-info: #0ea5e9;
-  --bs-info-rgb: 14, 165, 233;
-  --bs-warning: #f59e0b;
-  --bs-warning-rgb: 245, 158, 11;
-  --bs-danger: #ef4444;
-  --bs-danger-rgb: 239, 68, 68;
-  --bs-light: #f8fafc;
-  --bs-light-rgb: 248, 250, 252;
-  --bs-dark: #020617;
-  --bs-dark-rgb: 2, 6, 23;
-  --bs-font-sans-serif: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-body-font-family: var(--bs-font-sans-serif);
-  --bs-body-color: #0f172a;
-  --bs-body-bg: #ffffff;
-}
+// Variáveis customizadas agora estão em styles/_custom-variables.scss
+// e são importadas pelo bootstrap-custom.scss
 
 html {
   scroll-behavior: smooth;
