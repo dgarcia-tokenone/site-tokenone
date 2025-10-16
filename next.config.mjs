@@ -22,13 +22,15 @@ const nextConfig = {
   async headers() {
     const cspParts = [
       "default-src 'self'",
-      // Next.js precisa de 'unsafe-inline' para scripts inline de hidratação
-      // e 'unsafe-eval' para chunks dinâmicos em produção
+      // NOTA: 'unsafe-inline' e 'unsafe-eval' são NECESSÁRIOS para Next.js funcionar
+      // - unsafe-eval: chunks dinâmicos e code splitting em produção
+      // - unsafe-inline: hidratação e scripts inline do framework
+      // Migração para nonces requer middleware customizado (Next.js 14+)
       isProd
         ? "script-src 'self' 'unsafe-inline' 'unsafe-eval'"
         : "script-src 'self' 'unsafe-eval' 'unsafe-inline'",
       "style-src 'self' 'unsafe-inline'",
-      "img-src 'self' data: blob:",
+      "img-src 'self' data: blob: https:",
       "font-src 'self' data:",
       isProd
         ? "connect-src 'self'"
@@ -41,12 +43,26 @@ const nextConfig = {
 
     const csp = cspParts.join('; ');
 
+    // Permissions-Policy expandida para bloquear recursos sensíveis não utilizados
+    const permissionsPolicy = [
+      'camera=()',
+      'microphone=()',
+      'geolocation=()',
+      'payment=()',
+      'usb=()',
+      'accelerometer=()',
+      'gyroscope=()',
+      'magnetometer=()',
+      'xr-spatial-tracking=()',
+      'interest-cohort=()', // Bloqueia FLoC (privacidade)
+    ].join(', ');
+
     const headers = [
       { key: 'Content-Security-Policy', value: csp },
       { key: 'X-Frame-Options', value: 'DENY' },
       { key: 'X-Content-Type-Options', value: 'nosniff' },
       { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
-      { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+      { key: 'Permissions-Policy', value: permissionsPolicy },
     ];
 
     if (isProd) {
