@@ -16,7 +16,6 @@ export default function Navbar() {
                 alt="TokenOne"
                 width={233}
                 height={70}
-                priority
                 className="navbar-logo"
               />
             </Link>

@@ -17,7 +17,9 @@
       "Bash(npx eslint:*)",
       "Bash(npm run lint:*)",
       "Bash(if exist \"fix-quotes.js\" del \"fix-quotes.js\")",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(if exist \".next\" rmdir /s /q .next)",
+      "Bash(tee:*)"
     ],
     "deny": [],
     "ask": []

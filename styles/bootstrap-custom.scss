@@ -1,0 +1,31 @@
+// Bootstrap customizado - apenas módulos utilizados no projeto
+// Economia estimada: ~150-180 KB
+
+// 1. Configuração (obrigatório)
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// 2. Layout & Components
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+
+// 3. Components utilizados
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+
+// 4. Helpers
+@import "bootstrap/scss/helpers";
+
+// 5. Utilities (classes d-flex, gap, etc.)
+@import "bootstrap/scss/utilities/api";

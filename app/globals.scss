@@ -748,6 +748,35 @@ body:has(.cookie-banner) .whatsapp-fab {
   }
 }
 
+// Acessibilidade: reduzir efeitos visuais pesados para usuários com prefers-reduced-motion
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  // Reduz blur em gradientes decorativos para aliviar paint
+  .hero-section::before,
+  .hero-section::after,
+  .developers-section::before,
+  .developers-section::after,
+  .hero-media::before,
+  .hero-media::after,
+  .shape {
+    filter: blur(0) !important;
+    opacity: 0.2 !important;
+  }
+
+  // Remove sombras complexas
+  .hero-media,
+  .developers-highlight,
+  .partner-logo-card,
+  .developers-code-card {
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1) !important;
+  }
+}
+
 .hero-cta {
   --bs-btn-font-weight: 600;
   --bs-btn-padding-y: 0.6rem;
