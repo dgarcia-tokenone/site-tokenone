@@ -82,6 +82,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.85rem;
+  justify-content: center;
+
+  @media (min-width: 992px) {
+    justify-content: flex-start;
+  }
 }
 
 .hero-media {
@@ -303,6 +308,13 @@ body {
   color: #f8fafc !important; // Força cor branca do texto
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: block;
+  margin-inline: auto;
+  width: fit-content;
+
+  @media (min-width: 992px) {
+    margin-inline: 0;
+  }
 }
 
 .developers-docs-btn:hover,
@@ -493,6 +505,17 @@ body {
   }
 
   .footer-nav-grid {
+    @media (max-width: 991.98px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > * {
+        max-width: 280px;
+        text-align: left;
+      }
+    }
+
     @media (min-width: 992px) {
       > * {
         flex: 0 0 25%;

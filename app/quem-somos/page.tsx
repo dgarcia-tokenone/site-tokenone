@@ -129,7 +129,7 @@ export default function AboutPage() {
                 A Token One é uma empresa de tecnologia que oferece uma plataforma whitelabel de Crypto as a Service (CaaS) para transformar qualquer ativo em um token digital utilizando a Blockchain.
               </h1>
 
-              <div className="d-flex flex-wrap gap-3">
+              <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
                 <Link className="btn fw-bold btn-outline-light px-4" href="https://app.tokenone.com.br/authentication?organizationId=5rSaRhby9TbL7nmJa6rp">
                   Conheça a Plataforma
                 </Link>

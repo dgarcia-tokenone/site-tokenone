@@ -58,7 +58,7 @@ export default function HomePage() {
             </div>
             <div className="col-12 col-lg-6">
               <div className="hero-media">
-                <span className="hero-chip">Tokenização, Distribuição, Governança</span>
+                <span className="hero-chip d-none d-lg-inline">Tokenização, Distribuição, Governança</span>
                 <Image
                   src="/images/MockTokenOne-transparente.webp"
                   alt="Interface da plataforma Token One exibida em notebook e smartphone"

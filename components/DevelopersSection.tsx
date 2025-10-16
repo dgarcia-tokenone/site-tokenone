@@ -111,11 +111,12 @@ export default function DevelopersSection() {
                 <div role="tablist" aria-label="Exemplos de código" className="developers-tabs">
                   {snippetTabs.map((tab) => {
                     const isActive = tab.id === activeSnippet;
+                    const isWebhook = tab.id === "webhook";
                     return (
                       <button
                         key={tab.id}
                         type="button"
-                        className={`developers-tab${isActive ? " is-active" : ""}`}
+                        className={`developers-tab${isActive ? " is-active" : ""}${isWebhook ? " d-none d-lg-inline-block" : ""}`}
                         role="tab"
                         aria-selected={isActive}
                         onClick={() => setActiveSnippet(tab.id)}
@@ -127,7 +128,7 @@ export default function DevelopersSection() {
                 </div>
                 <button
                   type="button"
-                  className="developers-copy-btn"
+                  className="developers-copy-btn d-none d-lg-block"
                   onClick={async () => {
                     try {
                       await navigator.clipboard.writeText(code);
