@@ -76,11 +76,11 @@ function ContatoForm() {
   }
 
   return (
-    <div className="py-5 bg-light min-vh-100">
+    <div className="py-3 py-md-5 bg-light min-vh-100">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12 col-lg-8">
-            <div className="mb-4">
+            <div className="mb-3 mb-md-4">
               <Link href="/" className="btn btn-outline-secondary btn-sm">
                 <svg
                   width="16"
@@ -100,9 +100,9 @@ function ContatoForm() {
             </div>
 
             <div className="card shadow-sm border-0">
-              <div className="card-body p-4 p-md-5">
+              <div className="card-body p-3 p-md-5">
                 <h1 className="h3 fw-bold mb-2">Enviar um email</h1>
-                <p className="text-secondary mb-4">
+                <p className="text-secondary mb-3 mb-md-4">
                   Os campos marcados com um asterisco (<span className="text-danger">*</span>) são obrigatórios.
                 </p>
 
@@ -122,13 +122,13 @@ function ContatoForm() {
                 )}
 
                 <form onSubmit={handleSubmit}>
-                  <div className="mb-4">
+                  <div className="mb-3">
                     <label htmlFor="email" className="form-label fw-semibold">
                       Endereço de e-mail <span className="text-danger">*</span>
                     </label>
                     <input
                       type="email"
-                      className="form-control form-control-lg"
+                      className="form-control"
                       id="email"
                       name="email"
                       value={formData.email}
@@ -139,12 +139,12 @@ function ContatoForm() {
                     />
                   </div>
 
-                  <div className="mb-4">
+                  <div className="mb-3">
                     <label htmlFor="canal" className="form-label fw-semibold">
                       Canal <span className="text-danger">*</span>
                     </label>
                     <select
-                      className="form-select form-select-lg"
+                      className="form-select"
                       id="canal"
                       name="canal"
                       value={formData.canal}
@@ -161,13 +161,13 @@ function ContatoForm() {
                     </select>
                   </div>
 
-                  <div className="mb-4">
+                  <div className="mb-3">
                     <label htmlFor="assunto" className="form-label fw-semibold">
                       Assunto <span className="text-danger">*</span>
                     </label>
                     <input
                       type="text"
-                      className="form-control form-control-lg"
+                      className="form-control"
                       id="assunto"
                       name="assunto"
                       value={formData.assunto}
@@ -178,29 +178,29 @@ function ContatoForm() {
                     />
                   </div>
 
-                  <div className="mb-4">
+                  <div className="mb-3">
                     <label htmlFor="mensagem" className="form-label fw-semibold">
                       Descrição <span className="text-danger">*</span>
                     </label>
                     <textarea
-                      className="form-control form-control-lg"
+                      className="form-control"
                       id="mensagem"
                       name="mensagem"
                       value={formData.mensagem}
                       onChange={handleChange}
                       required
-                      rows={6}
+                      rows={5}
                       placeholder="Insira os detalhes de sua solicitação. Um membro de nossa equipe de suporte responderá assim que possível."
                       disabled={isSubmitting}
                       minLength={10}
                     />
-                    <div className="form-text">Mínimo de 10 caracteres</div>
+                    <div className="form-text small">Mínimo de 10 caracteres</div>
                   </div>
 
-                  <div className="d-grid">
+                  <div className="d-grid mt-4">
                     <button
                       type="submit"
-                      className="btn btn-primary btn-lg"
+                      className="btn btn-primary"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? (
@@ -246,12 +246,12 @@ function ContatoForm() {
 export default function ContatoPage() {
   return (
     <Suspense fallback={
-      <div className="py-5 bg-light min-vh-100">
+      <div className="py-3 py-md-5 bg-light min-vh-100">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-12 col-lg-8">
               <div className="card shadow-sm border-0">
-                <div className="card-body p-4 p-md-5 text-center">
+                <div className="card-body p-3 p-md-5 text-center">
                   <div className="spinner-border text-primary" role="status">
                     <span className="visually-hidden">Carregando...</span>
                   </div>
