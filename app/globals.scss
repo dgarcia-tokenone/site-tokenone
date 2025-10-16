@@ -299,12 +299,16 @@ body {
   --bs-btn-hover-color: #f8fafc;
   --bs-btn-hover-bg: #111827;
   --bs-btn-hover-border-color: #111827;
+  background-color: #0b1120;
+  color: #f8fafc !important; // Força cor branca do texto
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .developers-docs-btn:hover,
 .developers-docs-btn:focus-visible {
+  background-color: #111827;
+  color: #f8fafc !important; // Mantém cor branca no hover
   transform: translateY(-2px);
   box-shadow: 0 22px 52px rgba(15, 23, 42, 0.28);
 }
@@ -768,6 +772,7 @@ body:has(.cookie-banner) .whatsapp-fab {
   background: linear-gradient(120deg, #1e40af 0%, #6d28d9 100%);
   box-shadow: 0 15px 35px rgba(94, 129, 244, 0.45);
   border: none;
+  color: #f8fafc !important; // Força cor branca do texto
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -775,6 +780,7 @@ body:has(.cookie-banner) .whatsapp-fab {
 .hero-cta:focus-visible {
   transform: translateY(-2px);
   box-shadow: 0 18px 40px rgba(124, 58, 237, 0.45);
+  color: #f8fafc !important; // Mantém cor branca no hover
 }
 
 .hero-cta:focus-visible {
