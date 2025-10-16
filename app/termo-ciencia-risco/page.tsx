@@ -230,7 +230,7 @@ export default function TermoCienciaRiscoPage() {
                   lembre-se de que a assinatura eletrônica oficial deve ser realizada através da plataforma TokenOne durante o
                   processo de investimento.
                 </p>
-                <div className="d-flex gap-3 flex-wrap">
+                <div className="d-flex gap-3 flex-wrap justify-content-center">
                   <a
                     href="/docs/Termo-de-Ciência-de-Riscos-do-Investidor-Tokenone.pdf"
                     className="btn btn-primary btn-lg px-4"

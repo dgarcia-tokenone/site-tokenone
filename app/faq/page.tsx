@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
+import type { FaqCategory } from "@/components/FaqAccordion";
 
 const pageTitle = "Perguntas Frequentes";
 const pageDescription = "Tire suas dúvidas sobre tokenização de ativos, blockchain, investimentos e a plataforma Token One.";
@@ -35,15 +36,7 @@ export const metadata: Metadata = {
   },
 };
 
-type FAQ = {
-  category: string;
-  questions: {
-    q: string;
-    a: string;
-  }[];
-};
-
-const faqs: FAQ[] = [
+const faqs: FaqCategory[] = [
   {
     category: "Conceitos Básicos",
     questions: [
@@ -191,105 +184,44 @@ const faqs: FAQ[] = [
 export default function FaqPage() {
   return (
     <>
-      {/* Hero Section */}
-      <section
-        className="py-5"
-        style={{
-          background: "linear-gradient(180deg, #f8fafc 0%, #ffffff 100%)",
-          borderBottom: "1px solid #e2e8f0",
-        }}
-      >
-        <div className="container">
-          <div className="row justify-content-center text-center">
-            <div className="col-lg-8">
-              <h1 className="display-5 fw-bold mb-3" style={{ color: "#0f172a" }}>
-                Perguntas Frequentes
-              </h1>
-              <p className="lead text-muted">
-                Tire suas dúvidas sobre tokenização de ativos, regulação, investimentos e a plataforma Token One.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Content */}
-      <section className="py-5 py-lg-6">
+      <section className="py-5" style={{ backgroundColor: '#f8f9fa' }}>
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10">
-              {faqs.map((category, categoryIndex) => (
-                <div key={categoryIndex} className="mb-5">
-                  <h2 className="h4 fw-bold mb-4" style={{ color: "#1e293b" }}>
-                    {category.category}
-                  </h2>
-                  <div className="accordion" id={`faq-category-${categoryIndex}`}>
-                    {category.questions.map((faq, faqIndex) => {
-                      const accordionId = `faq-${categoryIndex}-${faqIndex}`;
-                      return (
-                        <div className="accordion-item border-0 mb-3" key={faqIndex} style={{ borderRadius: "0.75rem", overflow: "hidden", boxShadow: "0 1px 3px rgba(0, 0, 0, 0.1)" }}>
-                          <h3 className="accordion-header" id={`heading-${accordionId}`}>
-                            <button
-                              className="accordion-button collapsed fw-semibold"
-                              type="button"
-                              data-bs-toggle="collapse"
-                              data-bs-target={`#collapse-${accordionId}`}
-                              aria-expanded="false"
-                              aria-controls={`collapse-${accordionId}`}
-                              style={{
-                                backgroundColor: "#ffffff",
-                                color: "#1e293b",
-                                borderRadius: "0.75rem",
-                              }}
-                            >
-                              {faq.q}
-                            </button>
-                          </h3>
-                          <div
-                            id={`collapse-${accordionId}`}
-                            className="accordion-collapse collapse"
-                            aria-labelledby={`heading-${accordionId}`}
-                            data-bs-parent={`#faq-category-${categoryIndex}`}
-                          >
-                            <div className="accordion-body text-secondary" style={{ lineHeight: 1.7 }}>
-                              {faq.a}
-                            </div>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* CTA Section */}
-          <div className="row justify-content-center mt-5">
-            <div className="col-lg-8">
-              <div
-                className="p-4 p-md-5 rounded-4 text-center"
+          {/* Título centralizado */}
+          <div className="row justify-content-center text-center mb-5">
+            <div className="col-12">
+              <h1
+                className="fw-bold mb-4"
                 style={{
-                  background: "linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%)",
-                  border: "1px solid #cbd5e1",
+                  color: '#1e293b',
+                  fontSize: '2rem',
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase',
                 }}
               >
-                <h2 className="h4 fw-bold mb-3" style={{ color: "#0f172a" }}>
-                  Não encontrou a resposta que procurava?
-                </h2>
-                <p className="text-muted mb-4">
-                  Nossa equipe está pronta para ajudar com suas dúvidas específicas sobre tokenização e investimentos.
-                </p>
-                <a
-                  href="/contato"
-                  className="btn btn-dark btn-lg"
-                  style={{
-                    borderRadius: "0.75rem",
-                    padding: "0.75rem 2rem",
-                  }}
-                >
-                  Entre em contato
-                </a>
+                Perguntas Frequentes
+              </h1>
+            </div>
+          </div>
+
+          {/* Lista de perguntas */}
+          <div className="row justify-content-center">
+            <div className="col-lg-10 col-xl-9">
+              <div className="row g-4">
+                {faqs.map((category, categoryIndex) =>
+                  category.questions.map((faq, questionIndex) => (
+                    <div key={`faq-${categoryIndex}-${questionIndex}`} className="col-12">
+                      <article className="card border-0 shadow-sm h-100">
+                        <div className="card-body p-4">
+                          <h2 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
+                            {faq.q}
+                          </h2>
+                          <p className="mb-0 text-muted">{faq.a}</p>
+                        </div>
+                      </article>
+                    </div>
+                  ))
+                )}
               </div>
             </div>
           </div>

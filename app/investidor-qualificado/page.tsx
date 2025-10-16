@@ -308,7 +308,7 @@ export default function InvestidorQualificadoPage() {
                   Baixe o formulário oficial da Declaração da Condição de Investidor Qualificado. Preencha com atenção
                   todos os campos, assine e envie através da plataforma TokenOne.
                 </p>
-                <div className="d-flex gap-3 flex-wrap">
+                <div className="d-flex gap-3 flex-wrap justify-content-center">
                   <a
                     href="/docs/Declaração-da-Condição-de-Investidor-Qualificado.pdf"
                     className="btn btn-primary btn-lg px-4"

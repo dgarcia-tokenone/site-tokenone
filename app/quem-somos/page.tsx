@@ -130,7 +130,7 @@ export default function AboutPage() {
               </h1>
 
               <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
-                <Link className="btn fw-bold btn-outline-light px-4" href="https://app.tokenone.com.br/authentication?organizationId=5rSaRhby9TbL7nmJa6rp">
+                <Link className="btn fw-bold btn-outline-dark px-4" href="https://app.tokenone.com.br/authentication?organizationId=5rSaRhby9TbL7nmJa6rp">
                   Conheça a Plataforma
                 </Link>
               </div>

@@ -29,10 +29,10 @@ export default function Navbar() {
           {/* Coluna 3: Botões de ação */}
           <div className="col-auto">
             <div className="d-flex gap-2">
-              <a className="btn btn-outline-light" href={APP_URL}>
+              <a className="btn btn-outline-dark" href={APP_URL}>
                 Entrar
               </a>
-              <a className="btn btn-light" href={APP_URL}>
+              <a className="btn btn-dark" href={APP_URL}>
                 Cadastre-se
               </a>
             </div>

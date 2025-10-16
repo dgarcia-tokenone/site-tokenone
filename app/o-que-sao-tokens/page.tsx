@@ -4,6 +4,34 @@ export const metadata = {
     "Entenda de forma simples o que são tokens, como funciona a tokenização de ativos e como essa tecnologia está democratizando o acesso a investimentos.",
 };
 
+const faqItems = [
+  {
+    id: "faqToken1",
+    question: "Qual o valor mínimo para investir?",
+    answer: "Depende de cada oferta, mas geralmente você pode começar a investir com valores acessíveis, muitas vezes a partir de R$ 100 ou R$ 500. Isso torna o investimento em tokens muito mais acessível do que investimentos tradicionais."
+  },
+  {
+    id: "faqToken2",
+    question: "Posso vender meus tokens a qualquer momento?",
+    answer: "Depende do tipo de token e das regras de cada investimento. Alguns tokens podem ter períodos de carência ou restrições. A TokenOne pode facilitar negociações privadas entre investidores, mas é importante entender as condições específicas de cada oferta antes de investir."
+  },
+  {
+    id: "faqToken3",
+    question: "Tokens são a mesma coisa que criptomoedas?",
+    answer: "Não exatamente. Embora ambos usem tecnologia blockchain, criptomoedas (como Bitcoin) são moedas digitais usadas como meio de troca. Tokens de ativos representam a propriedade ou direitos sobre ativos reais do mundo físico ou digital. É como a diferença entre dinheiro e um título de propriedade."
+  },
+  {
+    id: "faqToken4",
+    question: "Preciso entender de tecnologia para investir?",
+    answer: "Não! A TokenOne cuida de toda a parte tecnológica para você. Você só precisa entender o básico sobre o investimento que está fazendo (o ativo, os riscos, os retornos esperados). É como usar um carro - você não precisa ser mecânico para dirigir."
+  },
+  {
+    id: "faqToken5",
+    question: "Meus tokens podem ser roubados?",
+    answer: "A tecnologia blockchain é extremamente segura. Seus tokens ficam em uma carteira digital (wallet) protegida por senhas e criptografia. É importante manter suas credenciais de acesso seguras. A TokenOne implementa múltiplas camadas de segurança para proteger seus ativos."
+  }
+];
+
 export default function OQueSaoTokensPage() {
   return (
     <main className="py-5 py-lg-6">
@@ -318,83 +346,60 @@ export default function OQueSaoTokensPage() {
                   A tokenização traz diversos benefícios que estão transformando o mercado de investimentos:
                 </p>
 
-                <div className="accordion" id="accordionVantagens">
-                  <div className="accordion-item">
-                    <h3 className="accordion-header">
-                      <button
-                        className="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse1"
-                        aria-expanded="true"
-                        aria-controls="collapse1"
-                      >
-                        <strong>1. Democratização do Acesso</strong>
-                      </button>
-                    </h3>
-                    <div id="collapse1" className="accordion-collapse collapse show" data-bs-parent="#accordionVantagens">
-                      <div className="accordion-body">
+                <div className="row g-4">
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100 border-0 shadow-sm">
+                      <div className="card-body">
+                        <div className="d-flex align-items-center mb-3">
+                          <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: "40px", height: "40px", flexShrink: 0 }}>
+                            <strong>1</strong>
+                          </div>
+                          <h3 className="h5 fw-semibold mb-0">Democratização do Acesso</h3>
+                        </div>
                         <p className="mb-2">
                           <strong>Antes:</strong> Para investir em um imóvel de R$ 1 milhão, você precisaria ter R$ 1 milhão.
                         </p>
                         <p className="mb-2">
-                          <strong>Com tokens:</strong> Você pode investir com R$ 100, R$ 500 ou R$ 1.000, comprando apenas uma fração
-                          do imóvel.
+                          <strong>Com tokens:</strong> Você pode investir com R$ 100, R$ 500 ou R$ 1.000, comprando apenas uma fração do imóvel.
                         </p>
-                        <p className="mb-0">
-                          Isso significa que investimentos que antes eram exclusivos para pessoas muito ricas agora estão acessíveis
-                          para qualquer pessoa!
+                        <p className="mb-0 text-muted">
+                          Isso significa que investimentos que antes eram exclusivos para pessoas muito ricas agora estão acessíveis para qualquer pessoa!
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="accordion-item">
-                    <h3 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse2"
-                        aria-expanded="false"
-                        aria-controls="collapse2"
-                      >
-                        <strong>2. Maior Liquidez</strong>
-                      </button>
-                    </h3>
-                    <div id="collapse2" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
-                      <div className="accordion-body">
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100 border-0 shadow-sm">
+                      <div className="card-body">
+                        <div className="d-flex align-items-center mb-3">
+                          <div className="bg-success text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: "40px", height: "40px", flexShrink: 0 }}>
+                            <strong>2</strong>
+                          </div>
+                          <h3 className="h5 fw-semibold mb-0">Maior Liquidez</h3>
+                        </div>
                         <p className="mb-2">
                           <strong>Liquidez</strong> significa a facilidade de transformar seu investimento em dinheiro rapidamente.
                         </p>
                         <p className="mb-2">
-                          <strong>Exemplo:</strong> Vender um apartamento inteiro pode levar meses. Mas vender tokens que representam
-                          uma fração desse apartamento pode ser muito mais rápido, pois há mais pessoas interessadas em comprar
-                          quantias menores.
+                          <strong>Exemplo:</strong> Vender um apartamento inteiro pode levar meses. Mas vender tokens que representam uma fração desse apartamento pode ser muito mais rápido, pois há mais pessoas interessadas em comprar quantias menores.
                         </p>
-                        <p className="mb-0">Os tokens podem ser negociados em plataformas especializadas, facilitando a compra e venda.</p>
+                        <p className="mb-0 text-muted">Os tokens podem ser negociados em plataformas especializadas, facilitando a compra e venda.</p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="accordion-item">
-                    <h3 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse3"
-                        aria-expanded="false"
-                        aria-controls="collapse3"
-                      >
-                        <strong>3. Transparência Total</strong>
-                      </button>
-                    </h3>
-                    <div id="collapse3" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
-                      <div className="accordion-body">
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100 border-0 shadow-sm">
+                      <div className="card-body">
+                        <div className="d-flex align-items-center mb-3">
+                          <div className="bg-info text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: "40px", height: "40px", flexShrink: 0 }}>
+                            <strong>3</strong>
+                          </div>
+                          <h3 className="h5 fw-semibold mb-0">Transparência Total</h3>
+                        </div>
                         <p className="mb-2">
-                          Todos os tokens são registrados em <strong>blockchain</strong>, uma tecnologia que funciona como um &quot;livro de
-                          registros&quot; público e impossível de alterar.
+                          Todos os tokens são registrados em <strong>blockchain</strong>, uma tecnologia que funciona como um &quot;livro de registros&quot; público e impossível de alterar.
                         </p>
                         <p className="mb-2">
                           <strong>Isso significa:</strong>
@@ -409,21 +414,15 @@ export default function OQueSaoTokensPage() {
                     </div>
                   </div>
 
-                  <div className="accordion-item">
-                    <h3 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse4"
-                        aria-expanded="false"
-                        aria-controls="collapse4"
-                      >
-                        <strong>4. Redução de Custos</strong>
-                      </button>
-                    </h3>
-                    <div id="collapse4" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
-                      <div className="accordion-body">
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100 border-0 shadow-sm">
+                      <div className="card-body">
+                        <div className="d-flex align-items-center mb-3">
+                          <div className="bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: "40px", height: "40px", flexShrink: 0 }}>
+                            <strong>4</strong>
+                          </div>
+                          <h3 className="h5 fw-semibold mb-0">Redução de Custos</h3>
+                        </div>
                         <p className="mb-2">
                           A tokenização elimina ou reduz diversos intermediários (bancos, corretoras, cartórios, etc.), o que significa:
                         </p>
@@ -437,21 +436,15 @@ export default function OQueSaoTokensPage() {
                     </div>
                   </div>
 
-                  <div className="accordion-item">
-                    <h3 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse5"
-                        aria-expanded="false"
-                        aria-controls="collapse5"
-                      >
-                        <strong>5. Diversificação Mais Fácil</strong>
-                      </button>
-                    </h3>
-                    <div id="collapse5" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
-                      <div className="accordion-body">
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100 border-0 shadow-sm">
+                      <div className="card-body">
+                        <div className="d-flex align-items-center mb-3">
+                          <div className="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: "40px", height: "40px", flexShrink: 0 }}>
+                            <strong>5</strong>
+                          </div>
+                          <h3 className="h5 fw-semibold mb-0">Diversificação Mais Fácil</h3>
+                        </div>
                         <p className="mb-2">
                           Com valores menores, você pode investir em diversos tipos de ativos ao mesmo tempo, reduzindo seus riscos:
                         </p>
@@ -461,31 +454,24 @@ export default function OQueSaoTokensPage() {
                           <li className="mb-1">Um pouco em commodities</li>
                           <li className="mb-1">Um pouco em arte</li>
                         </ul>
-                        <p className="mb-0">
+                        <p className="mb-0 text-muted">
                           <em>&quot;Não coloque todos os ovos na mesma cesta&quot;</em> - com tokens, isso fica muito mais fácil!
                         </p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="accordion-item">
-                    <h3 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapse6"
-                        aria-expanded="false"
-                        aria-controls="collapse6"
-                      >
-                        <strong>6. Acesso 24/7</strong>
-                      </button>
-                    </h3>
-                    <div id="collapse6" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
-                      <div className="accordion-body">
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100 border-0 shadow-sm">
+                      <div className="card-body">
+                        <div className="d-flex align-items-center mb-3">
+                          <div className="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: "40px", height: "40px", flexShrink: 0 }}>
+                            <strong>6</strong>
+                          </div>
+                          <h3 className="h5 fw-semibold mb-0">Acesso 24/7</h3>
+                        </div>
                         <p className="mb-0">
-                          Diferente do mercado tradicional que funciona em horários limitados, plataformas de tokens podem operar 24
-                          horas por dia, 7 dias por semana, permitindo que você invista quando for mais conveniente para você.
+                          Diferente do mercado tradicional que funciona em horários limitados, plataformas de tokens podem operar 24 horas por dia, 7 dias por semana, permitindo que você invista quando for mais conveniente para você.
                         </p>
                       </div>
                     </div>
@@ -739,117 +725,18 @@ export default function OQueSaoTokensPage() {
               </section>
 
               <section className="mb-5">
-                <h2 className="h3 fw-semibold mb-3">Perguntas Frequentes</h2>
-                <div className="accordion" id="accordionFAQ">
-                  <div className="accordion-item">
-                    <h3 className="accordion-header">
-                      <button
-                        className="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#faq1"
-                        aria-expanded="true"
-                        aria-controls="faq1"
-                      >
-                        Qual o valor mínimo para investir?
-                      </button>
-                    </h3>
-                    <div id="faq1" className="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
-                      <div className="accordion-body">
-                        Depende de cada oferta, mas geralmente você pode começar a investir com valores acessíveis, muitas vezes a
-                        partir de R$ 100 ou R$ 500. Isso torna o investimento em tokens muito mais acessível do que investimentos
-                        tradicionais.
+                <h2 className="h3 fw-semibold mb-4 text-center text-uppercase">Perguntas Frequentes</h2>
+                <div className="row g-4">
+                  {faqItems.map((item) => (
+                    <div key={item.id} className="col-12">
+                      <div className="card border-0 shadow-sm">
+                        <div className="card-body p-4">
+                          <h3 className="h5 fw-semibold mb-3">{item.question}</h3>
+                          <p className="mb-0 text-muted">{item.answer}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-
-                  <div className="accordion-item">
-                    <h3 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#faq2"
-                        aria-expanded="false"
-                        aria-controls="faq2"
-                      >
-                        Posso vender meus tokens a qualquer momento?
-                      </button>
-                    </h3>
-                    <div id="faq2" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                      <div className="accordion-body">
-                        Depende do tipo de token e das regras de cada investimento. Alguns tokens podem ter períodos de carência ou
-                        restrições. A TokenOne pode facilitar negociações privadas entre investidores, mas é importante entender as
-                        condições específicas de cada oferta antes de investir.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="accordion-item">
-                    <h3 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#faq3"
-                        aria-expanded="false"
-                        aria-controls="faq3"
-                      >
-                        Tokens são a mesma coisa que criptomoedas?
-                      </button>
-                    </h3>
-                    <div id="faq3" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                      <div className="accordion-body">
-                        Não exatamente. Embora ambos usem tecnologia blockchain, criptomoedas (como Bitcoin) são moedas digitais usadas
-                        como meio de troca. Tokens de ativos representam a propriedade ou direitos sobre ativos reais do mundo físico ou
-                        digital. É como a diferença entre dinheiro e um título de propriedade.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="accordion-item">
-                    <h3 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#faq4"
-                        aria-expanded="false"
-                        aria-controls="faq4"
-                      >
-                        Preciso entender de tecnologia para investir?
-                      </button>
-                    </h3>
-                    <div id="faq4" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                      <div className="accordion-body">
-                        Não! A TokenOne cuida de toda a parte tecnológica para você. Você só precisa entender o básico sobre o
-                        investimento que está fazendo (o ativo, os riscos, os retornos esperados). É como usar um carro - você não
-                        precisa ser mecânico para dirigir.
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="accordion-item">
-                    <h3 className="accordion-header">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#faq5"
-                        aria-expanded="false"
-                        aria-controls="faq5"
-                      >
-                        Meus tokens podem ser roubados?
-                      </button>
-                    </h3>
-                    <div id="faq5" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                      <div className="accordion-body">
-                        A tecnologia blockchain é extremamente segura. Seus tokens ficam em uma carteira digital (wallet) protegida por
-                        senhas e criptografia. É importante manter suas credenciais de acesso seguras. A TokenOne implementa múltiplas
-                        camadas de segurança para proteger seus ativos.
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </section>
 

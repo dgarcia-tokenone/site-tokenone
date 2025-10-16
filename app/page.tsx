@@ -74,33 +74,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section
-        className="py-3"
-        style={{ backgroundColor: "#fef3c7", borderTop: "2px solid #d97706", borderBottom: "2px solid #d97706" }}
-        role="status"
-        aria-live="polite"
-      >
-        <div className="container">
-          <div className="d-flex flex-column align-items-center gap-2 text-center">
-            <p className="mb-0 fw-semibold text-uppercase text-warning" style={{ letterSpacing: "0.08em" }}>
-              Aviso importante:
-            </p>
-            <p className="mb-0 text-secondary">
-              A Token One está em processo de autorização junto à CVM como Plataforma Eletrônica de Investimento Participativo, conforme
-              Resolução CVM nº 88/2022. Consulte o status de plataformas autorizadas em:{" "}
-              <a
-                href="https://www.gov.br/cvm"
-                className="text-decoration-none fw-semibold text-warning"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                www.gov.br/cvm
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
-
       <section className="partner-showcase py-5 py-lg-6" aria-labelledby="home-clientes-title">
         <div className="container">
           <div className="partner-showcase-card p-4 p-md-5">
