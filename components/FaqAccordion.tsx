@@ -27,11 +27,12 @@ export default function FaqAccordion({ faqs }: FaqAccordionProps) {
   const accordionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     let Collapse: any;
 
     const initAccordion = async () => {
       // Carrega Bootstrap dinamicamente para evitar SSR issues
-      // @ts-ignore - Bootstrap não tem tipos oficiais para imports dinâmicos
+      // @ts-expect-error - Bootstrap não tem tipos oficiais para imports dinâmicos
       const bootstrap = await import('bootstrap/dist/js/bootstrap.bundle.min.js');
       Collapse = bootstrap.Collapse;
 
@@ -54,8 +55,11 @@ export default function FaqAccordion({ faqs }: FaqAccordionProps) {
 
     // Cleanup para evitar memory leaks
     return () => {
-      if (accordionRef.current && Collapse) {
-        const collapseElements = accordionRef.current.querySelectorAll('.accordion-collapse');
+      // Captura o estado atual do ref para o cleanup
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      const currentRef = accordionRef.current;
+      if (currentRef && Collapse) {
+        const collapseElements = currentRef.querySelectorAll('.accordion-collapse');
         collapseElements.forEach((element) => {
           const instance = Collapse.getInstance(element);
           if (instance) {
