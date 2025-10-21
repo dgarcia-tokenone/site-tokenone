@@ -142,9 +142,9 @@ export default function PoliticaCookiesPage() {
                     <table className="table table-bordered">
                       <thead className="table-light">
                         <tr>
-                          <th>Nome</th>
-                          <th>Propósito</th>
-                          <th>Duração</th>
+                          <th style={{ width: '30%' }}>Nome</th>
+                          <th style={{ width: '50%' }}>Propósito</th>
+                          <th style={{ width: '20%' }}>Duração</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -182,15 +182,15 @@ export default function PoliticaCookiesPage() {
                     <table className="table table-bordered">
                       <thead className="table-light">
                         <tr>
-                          <th>Serviço</th>
-                          <th>Propósito</th>
-                          <th>Mais Informações</th>
+                          <th style={{ width: '20%', paddingRight: '1.5rem' }}>Serviço</th>
+                          <th style={{ width: '45%', paddingRight: '2rem' }}>Propósito</th>
+                          <th style={{ width: '35%' }}>Mais Informações</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Google Analytics</td>
-                          <td>Análise de tráfego e comportamento do usuário</td>
+                          <td style={{ paddingRight: '1.5rem' }}>Google Analytics</td>
+                          <td style={{ paddingRight: '2rem' }}>Análise de tráfego e comportamento do usuário</td>
                           <td>
                             <a
                               href="https://policies.google.com/privacy"
