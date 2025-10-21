@@ -25,12 +25,12 @@ export default function BootstrapClient() {
     const instances = new Set<CollapseInstance>();
 
     const initAccordions = async () => {
-      const module = await import('bootstrap/js/dist/collapse');
+      const collapseModule = await import('bootstrap/js/dist/collapse');
       if (!isActive) {
         return;
       }
 
-      const collapseExport = (module as { default?: unknown }).default ?? module;
+      const collapseExport = (collapseModule as { default?: unknown }).default ?? collapseModule;
       Collapse = collapseExport as CollapseConstructor;
 
       const collapseElements = document.querySelectorAll<HTMLElement>('.accordion-collapse');

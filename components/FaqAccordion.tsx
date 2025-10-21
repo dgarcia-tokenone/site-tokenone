@@ -46,12 +46,12 @@ export default function FaqAccordion({ faqs }: FaqAccordionProps) {
     const instances = new Map<Element, CollapseInstance>();
 
     const initAccordion = async () => {
-      const module = await import('bootstrap/js/dist/collapse');
+      const collapseModule = await import('bootstrap/js/dist/collapse');
       if (!isActive) {
         return;
       }
 
-      const collapseExport = (module as { default?: unknown }).default ?? module;
+      const collapseExport = (collapseModule as { default?: unknown }).default ?? collapseModule;
       Collapse = collapseExport as CollapseConstructor;
 
       const container = accordionRef.current;

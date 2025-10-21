@@ -19,6 +19,10 @@ const nextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
+  sassOptions: {
+    silenceDeprecations: ['import', 'global-builtin', 'color-functions'],
+  },
+
   async headers() {
     const cspParts = [
       "default-src 'self'",
