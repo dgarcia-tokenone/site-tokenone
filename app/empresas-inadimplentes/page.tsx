@@ -28,32 +28,32 @@ export default function EmpresasInadimplentesPage() {
                 </div>
 
                 <div className="table-responsive">
-                  <table className="table table-bordered table-hover align-middle">
+                  <table className="table table-bordered table-hover align-middle w-100" style={{ border: '1px solid #000', tableLayout: 'fixed' }}>
                     <thead className="table-light">
                       <tr>
-                        <th scope="col" className="text-center" style={{ width: "5%" }}>
+                        <th scope="col" className="text-center" style={{ width: "5%", border: '1px solid #000' }}>
                           #
                         </th>
-                        <th scope="col" style={{ width: "20%" }}>
+                        <th scope="col" className="text-center" style={{ width: "20%", border: '1px solid #000' }}>
                           PROJETO
                         </th>
-                        <th scope="col" style={{ width: "30%" }}>
+                        <th scope="col" className="text-center" style={{ width: "30%", border: '1px solid #000' }}>
                           SOCIEDADE EMPRESARIA DE PEQUENO PORTE
                         </th>
-                        <th scope="col" style={{ width: "15%" }}>
+                        <th scope="col" className="text-center" style={{ width: "15%", border: '1px solid #000' }}>
                           CNPJ
                         </th>
-                        <th scope="col" style={{ width: "15%" }}>
+                        <th scope="col" className="text-center" style={{ width: "15%", border: '1px solid #000' }}>
                           ENCERRAMENTO
                         </th>
-                        <th scope="col" className="text-end" style={{ width: "15%" }}>
+                        <th scope="col" className="text-center" style={{ width: "15%", border: '1px solid #000' }}>
                           VALOR CAPTADO
                         </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td colSpan={6} className="text-center text-secondary py-5">
+                        <td colSpan={6} className="text-center text-secondary py-5" style={{ border: '1px solid #000' }}>
                           <div className="d-flex flex-column align-items-center justify-content-center">
                             <svg
                               width="64"

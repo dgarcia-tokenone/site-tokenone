@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const APP_URL = "https://app.tokenone.com.br/authentication?organizationId=5rSaRhby9TbL7nmJa6rp";
-const WHATSAPP_URL = "https://wa.me/5511999999999?text=Quero%20falar%20com%20a%20TokenOne";
+const WHATSAPP_URL = "https://wa.me/5511996050404?text=Quero%20falar%20com%20a%20TokenOne";
 
 type FooterLink = {
   label: string;

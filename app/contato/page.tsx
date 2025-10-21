@@ -197,10 +197,11 @@ function ContatoForm() {
                     <div className="form-text small">Mínimo de 10 caracteres</div>
                   </div>
 
-                  <div className="d-grid mt-4">
+                  <div className="d-flex justify-content-center mt-4">
                     <button
                       type="submit"
-                      className="btn btn-primary"
+                      className="btn btn-dark py-2"
+                      style={{ paddingLeft: '5rem', paddingRight: '5rem' }}
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? (

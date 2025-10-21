@@ -233,7 +233,7 @@ export default function TermoCienciaRiscoPage() {
                 <div className="d-flex gap-3 flex-wrap justify-content-center">
                   <a
                     href="/docs/Termo-de-Ciência-de-Riscos-do-Investidor-Tokenone.pdf"
-                    className="btn btn-primary btn-lg px-4"
+                    className="btn btn-dark btn-lg px-4"
                     download
                     target="_blank"
                     rel="noopener noreferrer"

@@ -400,7 +400,7 @@ export default function OQueECrowdfundingPage() {
 
                 <div className="accordion" id="accordionVantagens">
                   <div className="accordion-item">
-                    <h3 className="accordion-header" id="heading-vantagem1">
+                    <h3 className="accordion-header">
                       <button
                         className="accordion-button"
                         type="button"
@@ -412,12 +412,7 @@ export default function OQueECrowdfundingPage() {
                         <strong>1. Acesso a Investimentos Exclusivos</strong>
                       </button>
                     </h3>
-                    <div
-                      id="vantagem1"
-                      className="accordion-collapse collapse show"
-                      aria-labelledby="heading-vantagem1"
-                      data-bs-parent="#accordionVantagens"
-                    >
+                    <div id="vantagem1" className="accordion-collapse collapse show" data-bs-parent="#accordionVantagens">
                       <div className="accordion-body">
                         <p className="mb-2">
                           Tradicionalmente, investir em empresas em estágio inicial era privilégio de grandes investidores e fundos de
@@ -434,7 +429,7 @@ export default function OQueECrowdfundingPage() {
                   </div>
 
                   <div className="accordion-item">
-                    <h3 className="accordion-header" id="heading-vantagem2">
+                    <h3 className="accordion-header">
                       <button
                         className="accordion-button collapsed"
                         type="button"
@@ -446,12 +441,7 @@ export default function OQueECrowdfundingPage() {
                         <strong>2. Baixo Valor de Entrada</strong>
                       </button>
                     </h3>
-                    <div
-                      id="vantagem2"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="heading-vantagem2"
-                      data-bs-parent="#accordionVantagens"
-                    >
+                    <div id="vantagem2" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
                       <div className="accordion-body">
                         <p className="mb-2">
                           Diferente de investimentos tradicionais em empresas que exigem valores elevados, no crowdfunding:
@@ -467,7 +457,7 @@ export default function OQueECrowdfundingPage() {
                   </div>
 
                   <div className="accordion-item">
-                    <h3 className="accordion-header" id="heading-vantagem3">
+                    <h3 className="accordion-header">
                       <button
                         className="accordion-button collapsed"
                         type="button"
@@ -479,12 +469,7 @@ export default function OQueECrowdfundingPage() {
                         <strong>3. Alto Potencial de Retorno</strong>
                       </button>
                     </h3>
-                    <div
-                      id="vantagem3"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="heading-vantagem3"
-                      data-bs-parent="#accordionVantagens"
-                    >
+                    <div id="vantagem3" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
                       <div className="accordion-body">
                         <p className="mb-2">
                           Investir em empresas em estágio inicial pode gerar retornos significativos:
@@ -506,7 +491,7 @@ export default function OQueECrowdfundingPage() {
                   </div>
 
                   <div className="accordion-item">
-                    <h3 className="accordion-header" id="heading-vantagem4">
+                    <h3 className="accordion-header">
                       <button
                         className="accordion-button collapsed"
                         type="button"
@@ -518,12 +503,7 @@ export default function OQueECrowdfundingPage() {
                         <strong>4. Transparência e Informação</strong>
                       </button>
                     </h3>
-                    <div
-                      id="vantagem4"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="heading-vantagem4"
-                      data-bs-parent="#accordionVantagens"
-                    >
+                    <div id="vantagem4" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
                       <div className="accordion-body">
                         <p className="mb-2">As plataformas de crowdfunding são obrigadas a fornecer informações detalhadas:</p>
                         <ul className="mb-0">
@@ -538,7 +518,7 @@ export default function OQueECrowdfundingPage() {
                   </div>
 
                   <div className="accordion-item">
-                    <h3 className="accordion-header" id="heading-vantagem5">
+                    <h3 className="accordion-header">
                       <button
                         className="accordion-button collapsed"
                         type="button"
@@ -550,12 +530,7 @@ export default function OQueECrowdfundingPage() {
                         <strong>5. Apoio ao Empreendedorismo</strong>
                       </button>
                     </h3>
-                    <div
-                      id="vantagem5"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="heading-vantagem5"
-                      data-bs-parent="#accordionVantagens"
-                    >
+                    <div id="vantagem5" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
                       <div className="accordion-body">
                         <p className="mb-2">Além do retorno financeiro, você:</p>
                         <ul className="mb-0">
@@ -570,7 +545,7 @@ export default function OQueECrowdfundingPage() {
                   </div>
 
                   <div className="accordion-item">
-                    <h3 className="accordion-header" id="heading-vantagem6">
+                    <h3 className="accordion-header">
                       <button
                         className="accordion-button collapsed"
                         type="button"
@@ -582,12 +557,7 @@ export default function OQueECrowdfundingPage() {
                         <strong>6. Diversificação de Portfólio</strong>
                       </button>
                     </h3>
-                    <div
-                      id="vantagem6"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="heading-vantagem6"
-                      data-bs-parent="#accordionVantagens"
-                    >
+                    <div id="vantagem6" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
                       <div className="accordion-body">
                         <p className="mb-2">O crowdfunding permite diversificar seus investimentos:</p>
                         <ul className="mb-0">
@@ -812,7 +782,7 @@ export default function OQueECrowdfundingPage() {
                 <h2 className="h3 fw-semibold mb-3">Perguntas Frequentes sobre Crowdfunding</h2>
                 <div className="accordion" id="accordionFAQ">
                   <div className="accordion-item">
-                    <h3 className="accordion-header" id="heading-faq1">
+                    <h3 className="accordion-header">
                       <button
                         className="accordion-button"
                         type="button"
@@ -824,12 +794,7 @@ export default function OQueECrowdfundingPage() {
                         Quanto tempo leva para ter retorno do investimento?
                       </button>
                     </h3>
-                    <div
-                      id="faq1"
-                      className="accordion-collapse collapse show"
-                      aria-labelledby="heading-faq1"
-                      data-bs-parent="#accordionFAQ"
-                    >
+                    <div id="faq1" className="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
                       <div className="accordion-body">
                         O retorno em crowdfunding geralmente é de longo prazo. Investimentos em empresas em estágio inicial podem
                         levar de 5 a 10 anos (ou mais) para gerar retorno através de dividendos ou eventos de liquidez (venda da
@@ -839,7 +804,7 @@ export default function OQueECrowdfundingPage() {
                   </div>
 
                   <div className="accordion-item">
-                    <h3 className="accordion-header" id="heading-faq2">
+                    <h3 className="accordion-header">
                       <button
                         className="accordion-button collapsed"
                         type="button"
@@ -851,12 +816,7 @@ export default function OQueECrowdfundingPage() {
                         Posso vender minha participação quando quiser?
                       </button>
                     </h3>
-                    <div
-                      id="faq2"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="heading-faq2"
-                      data-bs-parent="#accordionFAQ"
-                    >
+                    <div id="faq2" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                       <div className="accordion-body">
                         Não há garantia de liquidez. Diferente de ações na bolsa, não existe um mercado secundário ativo para
                         participações em empresas pequenas. Você pode tentar vender sua participação para outros investidores
@@ -866,7 +826,7 @@ export default function OQueECrowdfundingPage() {
                   </div>
 
                   <div className="accordion-item">
-                    <h3 className="accordion-header" id="heading-faq3">
+                    <h3 className="accordion-header">
                       <button
                         className="accordion-button collapsed"
                         type="button"
@@ -878,12 +838,7 @@ export default function OQueECrowdfundingPage() {
                         Qual a diferença entre crowdfunding e investir na bolsa de valores?
                       </button>
                     </h3>
-                    <div
-                      id="faq3"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="heading-faq3"
-                      data-bs-parent="#accordionFAQ"
-                    >
+                    <div id="faq3" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                       <div className="accordion-body">
                         Na bolsa você compra ações de empresas grandes e estabelecidas, com alta liquidez (pode vender a qualquer
                         momento) e transparência regulatória. No crowdfunding, você investe em empresas pequenas ou startups, com
@@ -894,7 +849,7 @@ export default function OQueECrowdfundingPage() {
                   </div>
 
                   <div className="accordion-item">
-                    <h3 className="accordion-header" id="heading-faq4">
+                    <h3 className="accordion-header">
                       <button
                         className="accordion-button collapsed"
                         type="button"
@@ -906,12 +861,7 @@ export default function OQueECrowdfundingPage() {
                         O que acontece se a empresa falir?
                       </button>
                     </h3>
-                    <div
-                      id="faq4"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="heading-faq4"
-                      data-bs-parent="#accordionFAQ"
-                    >
+                    <div id="faq4" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                       <div className="accordion-body">
                         Se a empresa falir, você provavelmente perderá todo o seu investimento. Como acionista minoritário, você está
                         no final da fila de credores. Primeiro são pagos funcionários, fornecedores, bancos, e só depois (se sobrar
@@ -921,7 +871,7 @@ export default function OQueECrowdfundingPage() {
                   </div>
 
                   <div className="accordion-item">
-                    <h3 className="accordion-header" id="heading-faq5">
+                    <h3 className="accordion-header">
                       <button
                         className="accordion-button collapsed"
                         type="button"
@@ -933,12 +883,7 @@ export default function OQueECrowdfundingPage() {
                         Tenho direito a participar das decisões da empresa?
                       </button>
                     </h3>
-                    <div
-                      id="faq5"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="heading-faq5"
-                      data-bs-parent="#accordionFAQ"
-                    >
+                    <div id="faq5" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                       <div className="accordion-body">
                         Depende dos termos da oferta. Geralmente, investidores de crowdfunding são acionistas minoritários sem poder
                         de voto nas decisões do dia a dia. No entanto, você tem direito a receber informações periódicas sobre a

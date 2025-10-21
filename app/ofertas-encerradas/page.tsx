@@ -20,32 +20,32 @@ export default function OfertasEncerradasPage() {
 
               <section className="mb-5">
                 <div className="table-responsive">
-                  <table className="table table-bordered table-hover align-middle">
+                  <table className="table table-bordered table-hover align-middle w-100" style={{ border: '1px solid #000', tableLayout: 'fixed' }}>
                     <thead className="table-light">
                       <tr>
-                        <th scope="col" className="text-center" style={{ width: "5%" }}>
-                          N
+                        <th scope="col" className="text-center" style={{ width: "5%", border: '1px solid #000' }}>
+                          #
                         </th>
-                        <th scope="col" style={{ width: "25%" }}>
+                        <th scope="col" className="text-center" style={{ width: "25%", border: '1px solid #000' }}>
                           Sociedade Empresária de Pequeno Porte
                         </th>
-                        <th scope="col" style={{ width: "25%" }}>
+                        <th scope="col" className="text-center" style={{ width: "25%", border: '1px solid #000' }}>
                           Oportunidade Finalizada
                         </th>
-                        <th scope="col" style={{ width: "15%" }}>
+                        <th scope="col" className="text-center" style={{ width: "15%", border: '1px solid #000' }}>
                           CNPJ
                         </th>
-                        <th scope="col" style={{ width: "15%" }}>
+                        <th scope="col" className="text-center" style={{ width: "15%", border: '1px solid #000' }}>
                           Data de encerramento da oferta
                         </th>
-                        <th scope="col" className="text-end" style={{ width: "15%" }}>
+                        <th scope="col" className="text-center" style={{ width: "15%", border: '1px solid #000' }}>
                           Valor captado
                         </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td colSpan={6} className="text-center text-secondary py-5">
+                        <td colSpan={6} className="text-center text-secondary py-5" style={{ border: '1px solid #000' }}>
                           <div className="d-flex flex-column align-items-center justify-content-center">
                             <svg
                               width="64"
@@ -102,10 +102,10 @@ export default function OfertasEncerradasPage() {
                     </tbody>
                     <tfoot className="table-light">
                       <tr>
-                        <td colSpan={5} className="text-end fw-semibold">
+                        <td colSpan={5} className="text-end fw-semibold" style={{ border: '1px solid #000' }}>
                           Valor Total Captado na Plataforma
                         </td>
-                        <td className="text-end fw-bold">R$ 0,00</td>
+                        <td className="text-end fw-bold" style={{ border: '1px solid #000' }}>R$ 0,00</td>
                       </tr>
                     </tfoot>
                   </table>
