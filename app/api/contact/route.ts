@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { Resend } from 'resend'
 import { z } from 'zod'
+import { Resend } from 'resend'
 
-const resend = new Resend(process.env.RESEND_API_KEY)
+const resendApiKey = process.env.RESEND_API_KEY
 
 const contactSchema = z.object({
   email: z.string().email('Email inválido'),
@@ -14,19 +14,40 @@ const contactSchema = z.object({
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    
+
     // Validar dados
     const validatedData = contactSchema.parse(body)
-    
+
     const { email, canal, assunto, mensagem } = validatedData
-    
-    // Enviar email via Resend
-    const { data, error } = await resend.emails.send({
-      from: 'TokenOne <noreply@tokenone.com.br>',
-      to: process.env.CONTACT_EMAIL || 'contato@tokenone.com.br',
-      replyTo: email,
-      subject: `[${canal}] ${assunto}`,
-      html: `
+
+    const apiKey = resendApiKey
+
+    if (!apiKey) {
+      console.error('Resend API key não configurada')
+      return NextResponse.json(
+        { error: 'Serviço de envio de mensagens indisponível no momento.' },
+        { status: 503 }
+      )
+    }
+
+    const resend = new Resend(apiKey)
+
+    const escapeHtml = (value: string) =>
+      value.replace(/[&<>"']/g, (char) => {
+        const entities: Record<string, string> = {
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          '"': '&quot;',
+          "'": '&#39;',
+        }
+        return entities[char] ?? char
+      })
+
+    const formatMultiline = (value: string) =>
+      escapeHtml(value).replace(/\n/g, '<br>')
+
+    const emailHtml = `
         <!DOCTYPE html>
         <html>
           <head>
@@ -83,32 +104,40 @@ export async function POST(request: NextRequest) {
             <div class="content">
               <div class="field">
                 <div class="field-label">Canal:</div>
-                <div class="field-value">${canal}</div>
+                <div class="field-value">${escapeHtml(canal)}</div>
               </div>
-              
+
               <div class="field">
                 <div class="field-label">Email do Remetente:</div>
-                <div class="field-value">${email}</div>
+                <div class="field-value">${escapeHtml(email)}</div>
               </div>
-              
+
               <div class="field">
                 <div class="field-label">Assunto:</div>
-                <div class="field-value">${assunto}</div>
+                <div class="field-value">${escapeHtml(assunto)}</div>
               </div>
-              
+
               <div class="field">
                 <div class="field-label">Mensagem:</div>
-                <div class="field-value">${mensagem.replace(/\n/g, '<br>')}</div>
+                <div class="field-value">${formatMultiline(mensagem)}</div>
               </div>
-              
+
               <div class="footer">
                 <p>Esta mensagem foi enviada através do formulário de contato do site TokenOne.</p>
-                <p>Para responder, utilize o email: ${email}</p>
+                <p>Para responder, utilize o email: ${escapeHtml(email)}</p>
               </div>
             </div>
           </body>
         </html>
-      `,
+      `
+
+    // Enviar email via Resend
+    const { data, error } = await resend.emails.send({
+      from: 'TokenOne <noreply@tokenone.com.br>',
+      to: process.env.CONTACT_EMAIL || 'contato@tokenone.com.br',
+      replyTo: email,
+      subject: `[${canal}] ${assunto}`,
+      html: emailHtml,
     })
 
     if (error) {
