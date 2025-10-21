@@ -761,11 +761,11 @@ export default function OQueSaoTokensPage() {
                   <div className="d-flex gap-3 flex-wrap">
                     <a
                       href="https://app.tokenone.com.br/authentication?organizationId=5rSaRhby9TbL7nmJa6rp"
-                      className="btn btn-success"
+                      className="btn btn-dark"
                     >
                       Ver Oportunidades Disponíveis
                     </a>
-                    <a href="/material-didatico" className="btn btn-outline-success">
+                    <a href="/material-didatico" className="btn btn-outline-dark">
                       Material Didático Completo
                     </a>
                   </div>

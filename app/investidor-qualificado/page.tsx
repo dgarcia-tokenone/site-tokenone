@@ -311,7 +311,7 @@ export default function InvestidorQualificadoPage() {
                 <div className="d-flex gap-3 flex-wrap justify-content-center">
                   <a
                     href="/docs/Declaração-da-Condição-de-Investidor-Qualificado.pdf"
-                    className="btn btn-primary btn-lg px-4"
+                    className="btn btn-dark btn-lg px-4"
                     download
                     target="_blank"
                     rel="noopener noreferrer"
