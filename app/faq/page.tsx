@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/config/site";
-import type { FaqCategory } from "@/components/FaqAccordion";
+import FaqAccordion, { type FaqCategory } from "@/components/FaqAccordion";
 
 const pageTitle = "Perguntas Frequentes";
 const pageDescription = "Tire suas dúvidas sobre tokenização de ativos, blockchain, investimentos e a plataforma Token One.";
@@ -207,22 +207,7 @@ export default function FaqPage() {
           {/* Lista de perguntas */}
           <div className="row justify-content-center">
             <div className="col-lg-10 col-xl-9">
-              <div className="row g-4">
-                {faqs.map((category, categoryIndex) =>
-                  category.questions.map((faq, questionIndex) => (
-                    <div key={`faq-${categoryIndex}-${questionIndex}`} className="col-12">
-                      <article className="card border-0 shadow-sm h-100">
-                        <div className="card-body p-4">
-                          <h2 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                            {faq.q}
-                          </h2>
-                          <p className="mb-0 text-muted">{faq.a}</p>
-                        </div>
-                      </article>
-                    </div>
-                  ))
-                )}
-              </div>
+              <FaqAccordion faqs={faqs} />
             </div>
           </div>
         </div>

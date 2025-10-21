@@ -72,63 +72,76 @@ export default function FaqAccordion({ faqs }: FaqAccordionProps) {
 
   return (
     <div ref={accordionRef}>
-      {faqs.map((category, categoryIndex) => (
-        <div key={categoryIndex} className="mb-5">
-          {/* Accordion do Bootstrap */}
-          <div className="accordion accordion-flush" id={`faq-category-${categoryIndex}`}>
-            {category.questions.map((faq, faqIndex) => {
-              const accordionId = `faq-${categoryIndex}-${faqIndex}`;
+      {faqs.map((category, categoryIndex) => {
+        const accordionGroupId = `faq-category-${categoryIndex}`;
+        const headingId = `${accordionGroupId}-title`;
 
-              return (
-                <div
-                  className="accordion-item bg-transparent border-0 mb-4"
-                  key={faqIndex}
-                >
-                  {/* Header com a pergunta */}
-                  <h3 className="accordion-header" id={`heading-${accordionId}`}>
-                    <button
-                      className="accordion-button collapsed bg-white shadow-sm fw-semibold"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target={`#collapse-${accordionId}`}
-                      aria-expanded="false"
-                      aria-controls={`collapse-${accordionId}`}
-                      style={{
-                        color: '#1e293b',
-                        borderRadius: '0',
-                        padding: '1.25rem 1.5rem',
-                        fontSize: '1.1rem',
-                      }}
-                    >
-                      {faq.q}
-                    </button>
-                  </h3>
+        return (
+          <section key={accordionGroupId} className="mb-5" aria-labelledby={headingId}>
+            <h2
+              id={headingId}
+              className="h4 fw-semibold text-uppercase text-secondary mb-3"
+              style={{ letterSpacing: '0.08em' }}
+            >
+              {category.category}
+            </h2>
 
-                  {/* Body com a resposta */}
+            {/* Accordion do Bootstrap */}
+            <div className="accordion accordion-flush" id={accordionGroupId}>
+              {category.questions.map((faq, faqIndex) => {
+                const accordionId = `faq-${categoryIndex}-${faqIndex}`;
+
+                return (
                   <div
-                    id={`collapse-${accordionId}`}
-                    className="accordion-collapse collapse"
-                    aria-labelledby={`heading-${accordionId}`}
-                    data-bs-parent={`#faq-category-${categoryIndex}`}
+                    className="accordion-item bg-transparent border-0 mb-4"
+                    key={accordionId}
                   >
+                    {/* Header com a pergunta */}
+                    <h3 className="accordion-header" id={`heading-${accordionId}`}>
+                      <button
+                        className="accordion-button collapsed bg-white shadow-sm fw-semibold"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target={`#collapse-${accordionId}`}
+                        aria-expanded="false"
+                        aria-controls={`collapse-${accordionId}`}
+                        style={{
+                          color: '#1e293b',
+                          borderRadius: '0',
+                          padding: '1.25rem 1.5rem',
+                          fontSize: '1.1rem',
+                        }}
+                      >
+                        {faq.q}
+                      </button>
+                    </h3>
+
+                    {/* Body com a resposta */}
                     <div
-                      className="accordion-body bg-white"
-                      style={{
-                        lineHeight: 1.7,
-                        color: '#64748b',
-                        padding: '1.5rem',
-                        fontSize: '1rem',
-                      }}
+                      id={`collapse-${accordionId}`}
+                      className="accordion-collapse collapse"
+                      aria-labelledby={`heading-${accordionId}`}
+                      data-bs-parent={`#${accordionGroupId}`}
                     >
-                      {faq.a}
+                      <div
+                        className="accordion-body bg-white"
+                        style={{
+                          lineHeight: 1.7,
+                          color: '#64748b',
+                          padding: '1.5rem',
+                          fontSize: '1rem',
+                        }}
+                      >
+                        {faq.a}
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      ))}
+                );
+              })}
+            </div>
+          </section>
+        );
+      })}
     </div>
   );
 }
