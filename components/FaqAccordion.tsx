@@ -1,10 +1,24 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import { useEffect, useRef } from 'react';
+
+type CollapseConfig = {
+  toggle?: boolean;
+};
+
+type CollapseInstance = {
+  dispose(): void;
+};
+
+type CollapseConstructor = {
+  new (element: Element, config?: CollapseConfig): CollapseInstance;
+  getInstance(element: Element): CollapseInstance | null;
+};
 
 export type FaqQuestion = {
   q: string;
-  a: string | React.ReactNode;
+  a: string | ReactNode;
 };
 
 export type FaqCategory = {
@@ -27,48 +41,48 @@ export default function FaqAccordion({ faqs }: FaqAccordionProps) {
   const accordionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    let Collapse: any;
+    let isActive = true;
+    let Collapse: CollapseConstructor | null = null;
+    const instances = new Map<Element, CollapseInstance>();
 
     const initAccordion = async () => {
-      // Carrega Bootstrap dinamicamente para evitar SSR issues
-      // @ts-expect-error - Bootstrap não tem tipos oficiais para imports dinâmicos
-      const bootstrap = await import('bootstrap/dist/js/bootstrap.bundle.min.js');
-      Collapse = bootstrap.Collapse;
-
-      // Aguarda o DOM estar pronto
-      await new Promise(resolve => setTimeout(resolve, 100));
-
-      if (accordionRef.current) {
-        // Inicializa cada collapse manualmente
-        const collapseElements = accordionRef.current.querySelectorAll('.accordion-collapse');
-        collapseElements.forEach((element) => {
-          if (!element.classList.contains('collapse-initialized')) {
-            new Collapse(element, { toggle: false });
-            element.classList.add('collapse-initialized');
-          }
-        });
+      const collapseModule = await import('bootstrap/js/dist/collapse');
+      if (!isActive) {
+        return;
       }
+
+      const collapseExport = (collapseModule as { default?: unknown }).default ?? collapseModule;
+      Collapse = collapseExport as CollapseConstructor;
+
+      const container = accordionRef.current;
+      if (!container || !Collapse) {
+        return;
+      }
+
+      const collapseElements = container.querySelectorAll<HTMLElement>('.accordion-collapse');
+      collapseElements.forEach((element) => {
+        if (Collapse?.getInstance(element)) {
+          return;
+        }
+
+        if (Collapse) {
+          const instance = new Collapse(element, { toggle: false });
+          instances.set(element, instance);
+        }
+      });
     };
 
-    initAccordion();
+    void initAccordion();
 
     // Cleanup para evitar memory leaks
     return () => {
-      // Captura o estado atual do ref para o cleanup
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-      const currentRef = accordionRef.current;
-      if (currentRef && Collapse) {
-        const collapseElements = currentRef.querySelectorAll('.accordion-collapse');
-        collapseElements.forEach((element) => {
-          const instance = Collapse.getInstance(element);
-          if (instance) {
-            instance.dispose();
-          }
-        });
-      }
+      isActive = false;
+      instances.forEach((instance) => {
+        instance.dispose();
+      });
+      instances.clear();
     };
-  }, []);
+  }, [faqs]);
 
   return (
     <div ref={accordionRef}>

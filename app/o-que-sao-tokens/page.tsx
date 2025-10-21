@@ -1,35 +1,37 @@
+import FaqAccordion, { type FaqCategory } from "@/components/FaqAccordion";
+
 export const metadata = {
   title: "O que são Tokens? | TokenOne",
   description:
     "Entenda de forma simples o que são tokens, como funciona a tokenização de ativos e como essa tecnologia está democratizando o acesso a investimentos.",
 };
 
-const faqItems = [
+const faqContent: FaqCategory[] = [
   {
-    id: "faqToken1",
-    question: "Qual o valor mínimo para investir?",
-    answer: "Depende de cada oferta, mas geralmente você pode começar a investir com valores acessíveis, muitas vezes a partir de R$ 100 ou R$ 500. Isso torna o investimento em tokens muito mais acessível do que investimentos tradicionais."
+    category: "Perguntas Frequentes",
+    questions: [
+      {
+        q: "Qual o valor mínimo para investir?",
+        a: "Depende de cada oferta, mas geralmente você pode começar a investir com valores acessíveis, muitas vezes a partir de R$ 100 ou R$ 500. Isso torna o investimento em tokens muito mais acessível do que investimentos tradicionais.",
+      },
+      {
+        q: "Posso vender meus tokens a qualquer momento?",
+        a: "Depende do tipo de token e das regras de cada investimento. Alguns tokens podem ter períodos de carência ou restrições. A TokenOne pode facilitar negociações privadas entre investidores, mas é importante entender as condições específicas de cada oferta antes de investir.",
+      },
+      {
+        q: "Tokens são a mesma coisa que criptomoedas?",
+        a: "Não exatamente. Embora ambos usem tecnologia blockchain, criptomoedas (como Bitcoin) são moedas digitais usadas como meio de troca. Tokens de ativos representam a propriedade ou direitos sobre ativos reais do mundo físico ou digital. É como a diferença entre dinheiro e um título de propriedade.",
+      },
+      {
+        q: "Preciso entender de tecnologia para investir?",
+        a: "Não! A TokenOne cuida de toda a parte tecnológica para você. Você só precisa entender o básico sobre o investimento que está fazendo (o ativo, os riscos, os retornos esperados). É como usar um carro - você não precisa ser mecânico para dirigir.",
+      },
+      {
+        q: "Meus tokens podem ser roubados?",
+        a: "A tecnologia blockchain é extremamente segura. Seus tokens ficam em uma carteira digital (wallet) protegida por senhas e criptografia. É importante manter suas credenciais de acesso seguras. A TokenOne implementa múltiplas camadas de segurança para proteger seus ativos.",
+      },
+    ],
   },
-  {
-    id: "faqToken2",
-    question: "Posso vender meus tokens a qualquer momento?",
-    answer: "Depende do tipo de token e das regras de cada investimento. Alguns tokens podem ter períodos de carência ou restrições. A TokenOne pode facilitar negociações privadas entre investidores, mas é importante entender as condições específicas de cada oferta antes de investir."
-  },
-  {
-    id: "faqToken3",
-    question: "Tokens são a mesma coisa que criptomoedas?",
-    answer: "Não exatamente. Embora ambos usem tecnologia blockchain, criptomoedas (como Bitcoin) são moedas digitais usadas como meio de troca. Tokens de ativos representam a propriedade ou direitos sobre ativos reais do mundo físico ou digital. É como a diferença entre dinheiro e um título de propriedade."
-  },
-  {
-    id: "faqToken4",
-    question: "Preciso entender de tecnologia para investir?",
-    answer: "Não! A TokenOne cuida de toda a parte tecnológica para você. Você só precisa entender o básico sobre o investimento que está fazendo (o ativo, os riscos, os retornos esperados). É como usar um carro - você não precisa ser mecânico para dirigir."
-  },
-  {
-    id: "faqToken5",
-    question: "Meus tokens podem ser roubados?",
-    answer: "A tecnologia blockchain é extremamente segura. Seus tokens ficam em uma carteira digital (wallet) protegida por senhas e criptografia. É importante manter suas credenciais de acesso seguras. A TokenOne implementa múltiplas camadas de segurança para proteger seus ativos."
-  }
 ];
 
 export default function OQueSaoTokensPage() {
@@ -726,18 +728,7 @@ export default function OQueSaoTokensPage() {
 
               <section className="mb-5">
                 <h2 className="h3 fw-semibold mb-4 text-center text-uppercase">Perguntas Frequentes</h2>
-                <div className="row g-4">
-                  {faqItems.map((item) => (
-                    <div key={item.id} className="col-12">
-                      <div className="card border-0 shadow-sm">
-                        <div className="card-body p-4">
-                          <h3 className="h5 fw-semibold mb-3">{item.question}</h3>
-                          <p className="mb-0 text-muted">{item.answer}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+                <FaqAccordion faqs={faqContent} />
               </section>
 
               <section className="mb-5">

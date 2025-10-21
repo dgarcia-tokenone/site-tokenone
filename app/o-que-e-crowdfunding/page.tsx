@@ -398,13 +398,22 @@ export default function OQueECrowdfundingPage() {
                 <h2 className="h3 fw-semibold mb-3">Vantagens do Crowdfunding para Investidores</h2>
                 <p className="mb-4">O crowdfunding oferece diversas vantagens para quem quer investir:</p>
 
-                <div className="row g-4">
-                  <div className="col-12">
-                    <article className="card border-0 shadow-sm h-100">
-                      <div className="card-body p-4">
-                        <h3 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                          1. Acesso a Investimentos Exclusivos
-                        </h3>
+                <div className="accordion" id="accordionVantagens">
+                  <div className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#vantagem1"
+                        aria-expanded="true"
+                        aria-controls="vantagem1"
+                      >
+                        <strong>1. Acesso a Investimentos Exclusivos</strong>
+                      </button>
+                    </h3>
+                    <div id="vantagem1" className="accordion-collapse collapse show" data-bs-parent="#accordionVantagens">
+                      <div className="accordion-body">
                         <p className="mb-2">
                           Tradicionalmente, investir em empresas em estágio inicial era privilégio de grandes investidores e fundos de
                           venture capital. Com o crowdfunding, qualquer pessoa pode:
@@ -416,15 +425,24 @@ export default function OQueECrowdfundingPage() {
                           <li className="mb-1">Diversificar além dos investimentos tradicionais</li>
                         </ul>
                       </div>
-                    </article>
+                    </div>
                   </div>
 
-                  <div className="col-12">
-                    <article className="card border-0 shadow-sm h-100">
-                      <div className="card-body p-4">
-                        <h3 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                          2. Baixo Valor de Entrada
-                        </h3>
+                  <div className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#vantagem2"
+                        aria-expanded="false"
+                        aria-controls="vantagem2"
+                      >
+                        <strong>2. Baixo Valor de Entrada</strong>
+                      </button>
+                    </h3>
+                    <div id="vantagem2" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
+                      <div className="accordion-body">
                         <p className="mb-2">
                           Diferente de investimentos tradicionais em empresas que exigem valores elevados, no crowdfunding:
                         </p>
@@ -435,15 +453,24 @@ export default function OQueECrowdfundingPage() {
                           <li className="mb-1">Democratização real do acesso ao investimento em negócios</li>
                         </ul>
                       </div>
-                    </article>
+                    </div>
                   </div>
 
-                  <div className="col-12">
-                    <article className="card border-0 shadow-sm h-100">
-                      <div className="card-body p-4">
-                        <h3 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                          3. Alto Potencial de Retorno
-                        </h3>
+                  <div className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#vantagem3"
+                        aria-expanded="false"
+                        aria-controls="vantagem3"
+                      >
+                        <strong>3. Alto Potencial de Retorno</strong>
+                      </button>
+                    </h3>
+                    <div id="vantagem3" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
+                      <div className="accordion-body">
                         <p className="mb-2">
                           Investir em empresas em estágio inicial pode gerar retornos significativos:
                         </p>
@@ -460,15 +487,24 @@ export default function OQueECrowdfundingPage() {
                           sucesso.
                         </div>
                       </div>
-                    </article>
+                    </div>
                   </div>
 
-                  <div className="col-12">
-                    <article className="card border-0 shadow-sm h-100">
-                      <div className="card-body p-4">
-                        <h3 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                          4. Transparência e Informação
-                        </h3>
+                  <div className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#vantagem4"
+                        aria-expanded="false"
+                        aria-controls="vantagem4"
+                      >
+                        <strong>4. Transparência e Informação</strong>
+                      </button>
+                    </h3>
+                    <div id="vantagem4" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
+                      <div className="accordion-body">
                         <p className="mb-2">As plataformas de crowdfunding são obrigadas a fornecer informações detalhadas:</p>
                         <ul className="mb-0">
                           <li className="mb-1">Documentos completos sobre a empresa e o negócio</li>
@@ -478,15 +514,24 @@ export default function OQueECrowdfundingPage() {
                           <li className="mb-1">Atualizações periódicas após o investimento</li>
                         </ul>
                       </div>
-                    </article>
+                    </div>
                   </div>
 
-                  <div className="col-12">
-                    <article className="card border-0 shadow-sm h-100">
-                      <div className="card-body p-4">
-                        <h3 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                          5. Apoio ao Empreendedorismo
-                        </h3>
+                  <div className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#vantagem5"
+                        aria-expanded="false"
+                        aria-controls="vantagem5"
+                      >
+                        <strong>5. Apoio ao Empreendedorismo</strong>
+                      </button>
+                    </h3>
+                    <div id="vantagem5" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
+                      <div className="accordion-body">
                         <p className="mb-2">Além do retorno financeiro, você:</p>
                         <ul className="mb-0">
                           <li className="mb-1">Ajuda empresas brasileiras a crescerem</li>
@@ -496,15 +541,24 @@ export default function OQueECrowdfundingPage() {
                           <li className="mb-1">Satisfação de ser parte do sucesso de novos negócios</li>
                         </ul>
                       </div>
-                    </article>
+                    </div>
                   </div>
 
-                  <div className="col-12">
-                    <article className="card border-0 shadow-sm h-100">
-                      <div className="card-body p-4">
-                        <h3 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                          6. Diversificação de Portfólio
-                        </h3>
+                  <div className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#vantagem6"
+                        aria-expanded="false"
+                        aria-controls="vantagem6"
+                      >
+                        <strong>6. Diversificação de Portfólio</strong>
+                      </button>
+                    </h3>
+                    <div id="vantagem6" className="accordion-collapse collapse" data-bs-parent="#accordionVantagens">
+                      <div className="accordion-body">
                         <p className="mb-2">O crowdfunding permite diversificar seus investimentos:</p>
                         <ul className="mb-0">
                           <li className="mb-1">Adicione ativos alternativos ao seu portfólio</li>
@@ -513,7 +567,7 @@ export default function OQueECrowdfundingPage() {
                           <li className="mb-1">Reduza riscos através da diversificação</li>
                         </ul>
                       </div>
-                    </article>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -726,81 +780,116 @@ export default function OQueECrowdfundingPage() {
 
               <section className="mb-5">
                 <h2 className="h3 fw-semibold mb-3">Perguntas Frequentes sobre Crowdfunding</h2>
-                <div className="row g-4">
-                  <div className="col-12">
-                    <article className="card border-0 shadow-sm h-100">
-                      <div className="card-body p-4">
-                        <h3 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                          Quanto tempo leva para ter retorno do investimento?
-                        </h3>
-                        <p className="mb-0 text-muted">
-                          O retorno em crowdfunding geralmente é de longo prazo. Investimentos em empresas em estágio inicial podem
-                          levar de 5 a 10 anos (ou mais) para gerar retorno através de dividendos ou eventos de liquidez (venda da
-                          empresa, IPO). Este não é um investimento para quem precisa do dinheiro no curto prazo.
-                        </p>
+                <div className="accordion" id="accordionFAQ">
+                  <div className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq1"
+                        aria-expanded="true"
+                        aria-controls="faq1"
+                      >
+                        Quanto tempo leva para ter retorno do investimento?
+                      </button>
+                    </h3>
+                    <div id="faq1" className="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                      <div className="accordion-body">
+                        O retorno em crowdfunding geralmente é de longo prazo. Investimentos em empresas em estágio inicial podem
+                        levar de 5 a 10 anos (ou mais) para gerar retorno através de dividendos ou eventos de liquidez (venda da
+                        empresa, IPO). Este não é um investimento para quem precisa do dinheiro no curto prazo.
                       </div>
-                    </article>
+                    </div>
                   </div>
 
-                  <div className="col-12">
-                    <article className="card border-0 shadow-sm h-100">
-                      <div className="card-body p-4">
-                        <h3 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                          Posso vender minha participação quando quiser?
-                        </h3>
-                        <p className="mb-0 text-muted">
-                          Não há garantia de liquidez. Diferente de ações na bolsa, não existe um mercado secundário ativo para
-                          participações em empresas pequenas. Você pode tentar vender sua participação para outros investidores
-                          (negociação privada), mas pode ser difícil encontrar compradores. Considere este investimento como ilíquido.
-                        </p>
+                  <div className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq2"
+                        aria-expanded="false"
+                        aria-controls="faq2"
+                      >
+                        Posso vender minha participação quando quiser?
+                      </button>
+                    </h3>
+                    <div id="faq2" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                      <div className="accordion-body">
+                        Não há garantia de liquidez. Diferente de ações na bolsa, não existe um mercado secundário ativo para
+                        participações em empresas pequenas. Você pode tentar vender sua participação para outros investidores
+                        (negociação privada), mas pode ser difícil encontrar compradores. Considere este investimento como ilíquido.
                       </div>
-                    </article>
+                    </div>
                   </div>
 
-                  <div className="col-12">
-                    <article className="card border-0 shadow-sm h-100">
-                      <div className="card-body p-4">
-                        <h3 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                          Qual a diferença entre crowdfunding e investir na bolsa de valores?
-                        </h3>
-                        <p className="mb-0 text-muted">
-                          Na bolsa você compra ações de empresas grandes e estabelecidas, com alta liquidez (pode vender a qualquer
-                          momento) e transparência regulatória. No crowdfunding, você investe em empresas pequenas ou startups, com
-                          baixa liquidez, maior risco, mas também potencial de retorno muito maior se a empresa crescer
-                          significativamente.
-                        </p>
+                  <div className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq3"
+                        aria-expanded="false"
+                        aria-controls="faq3"
+                      >
+                        Qual a diferença entre crowdfunding e investir na bolsa de valores?
+                      </button>
+                    </h3>
+                    <div id="faq3" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                      <div className="accordion-body">
+                        Na bolsa você compra ações de empresas grandes e estabelecidas, com alta liquidez (pode vender a qualquer
+                        momento) e transparência regulatória. No crowdfunding, você investe em empresas pequenas ou startups, com
+                        baixa liquidez, maior risco, mas também potencial de retorno muito maior se a empresa crescer
+                        significativamente.
                       </div>
-                    </article>
+                    </div>
                   </div>
 
-                  <div className="col-12">
-                    <article className="card border-0 shadow-sm h-100">
-                      <div className="card-body p-4">
-                        <h3 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                          O que acontece se a empresa falir?
-                        </h3>
-                        <p className="mb-0 text-muted">
-                          Se a empresa falir, você provavelmente perderá todo o seu investimento. Como acionista minoritário, você está
-                          no final da fila de credores. Primeiro são pagos funcionários, fornecedores, bancos, e só depois (se sobrar
-                          algo) os acionistas. Por isso é fundamental diversificar e investir apenas o que você pode perder.
-                        </p>
+                  <div className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq4"
+                        aria-expanded="false"
+                        aria-controls="faq4"
+                      >
+                        O que acontece se a empresa falir?
+                      </button>
+                    </h3>
+                    <div id="faq4" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                      <div className="accordion-body">
+                        Se a empresa falir, você provavelmente perderá todo o seu investimento. Como acionista minoritário, você está
+                        no final da fila de credores. Primeiro são pagos funcionários, fornecedores, bancos, e só depois (se sobrar
+                        algo) os acionistas. Por isso é fundamental diversificar e investir apenas o que você pode perder.
                       </div>
-                    </article>
+                    </div>
                   </div>
 
-                  <div className="col-12">
-                    <article className="card border-0 shadow-sm h-100">
-                      <div className="card-body p-4">
-                        <h3 className="h5 fw-semibold mb-3" style={{ color: "#1e293b" }}>
-                          Tenho direito a participar das decisões da empresa?
-                        </h3>
-                        <p className="mb-0 text-muted">
-                          Depende dos termos da oferta. Geralmente, investidores de crowdfunding são acionistas minoritários sem poder
-                          de voto nas decisões do dia a dia. No entanto, você tem direito a receber informações periódicas sobre a
-                          empresa e pode ter direito a voto em decisões muito importantes (conforme acordado nos documentos da oferta).
-                        </p>
+                  <div className="accordion-item">
+                    <h3 className="accordion-header">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faq5"
+                        aria-expanded="false"
+                        aria-controls="faq5"
+                      >
+                        Tenho direito a participar das decisões da empresa?
+                      </button>
+                    </h3>
+                    <div id="faq5" className="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                      <div className="accordion-body">
+                        Depende dos termos da oferta. Geralmente, investidores de crowdfunding são acionistas minoritários sem poder
+                        de voto nas decisões do dia a dia. No entanto, você tem direito a receber informações periódicas sobre a
+                        empresa e pode ter direito a voto em decisões muito importantes (conforme acordado nos documentos da oferta).
                       </div>
-                    </article>
+                    </div>
                   </div>
                 </div>
               </section>
@@ -826,15 +915,15 @@ export default function OQueECrowdfundingPage() {
                   <div className="d-flex gap-3 flex-wrap">
                     <a
                       href="https://app.tokenone.com.br/authentication?organizationId=5rSaRhby9TbL7nmJa6rp"
-                      className="btn btn-dark"
+                      className="btn btn-success"
                     >
                       Ver Oportunidades Disponíveis
                     </a>
-                    <a href="/material-didatico" className="btn btn-outline-dark">
+                    <a href="/material-didatico" className="btn btn-outline-success">
                       Material Didático Completo
                     </a>
-                    <a href="/o-que-sao-tokens" className="btn btn-outline-dark">
-                      Entender Sobre Tokens
+                    <a href="/o-que-sao-tokens" className="btn btn-outline-success">
+                      Entender Tokens
                     </a>
                   </div>
                 </div>
